@@ -40,6 +40,11 @@ a {
 .main {
   width: calc(100% - 320px);
   display: inline-block;
+  border: 1px solid #f00;
+}
+.article-body img,
+.post-content img {
+  width: 500px;
 }
 .header .blog-title {
   margin: 5px 0;
@@ -85,4 +90,7 @@ a {
   float: right;
   width: 280px;
   padding: 20px 0;
+  height: 1000px;
+  position: relative;
+  border: 1px solid #f00;
 }
