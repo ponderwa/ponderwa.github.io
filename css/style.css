@@ -42,8 +42,7 @@ a {
   display: inline-block;
   border: 1px solid #f00;
 }
-.article-body img,
-.post-content img {
+img {
   width: 500px;
 }
 .header .blog-title {
