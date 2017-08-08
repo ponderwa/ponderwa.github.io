@@ -8,6 +8,14 @@
   letter-spacing: 15;
   font-family: "Microsoft JhengHei";
 }
+.header .blog-title .logo:hover {
+  color: #f75357;
+}
+.header .blog-title .logo::after {
+  content: ".";
+  color: #f75357;
+  font-size: 44px;
+}
 .header .navbar {
   border-top: 1px solid #f1f1f1;
   border-bottom: 1px solid #f1f1f1;
