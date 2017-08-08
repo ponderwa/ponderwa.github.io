@@ -5,6 +5,7 @@
 .header .blog-title .logo {
   font-size: 44px;
   letter-spacing: 15;
+  font-family: "Microsoft JhengHei";
 }
 .header .navbar {
   border-top: 1px solid #f1f1f1;
@@ -36,5 +37,5 @@
   font-weight: 600;
   font-size: 27px;
   line-height: 50px;
-  color: #555;
+  color: #888;
 }

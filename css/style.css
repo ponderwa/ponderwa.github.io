@@ -12,7 +12,7 @@ body {
   background-color: #fff;
   color: #333;
   line-height: 1.5;
-  font-family: sans-serif;
+  font-family: PingFang SC, sans-serif;
 }
 a {
   text-decoration: none;
@@ -23,13 +23,6 @@ a {
   display: block;
   content: "";
   clear: both;
-}
-.section {
-  border-bottom: 1px solid #f1f1f1;
-}
-.article-title,
-.copyright {
-  text-align: center;
 }
 .container {
   max-width: 1170px;
@@ -42,8 +35,37 @@ a {
   display: inline-block;
   border: 1px solid #f00;
 }
+@media (max-width: 970px) {
+  .main {
+    width: 100%;
+  }
+  .siderbar {
+    display: none;
+  }
+}
+.sidebar {
+  float: right;
+  width: 280px;
+  padding: 20px 0;
+  height: 1000px;
+  position: relative;
+  border: 1px solid #f00;
+}
+@media (max-width: 970px) {
+  .sidebar {
+    display: none;
+  }
+}
 img {
   width: 500px;
+  text-align: center;
+}
+.section {
+  border-bottom: 1px solid #f1f1f1;
+}
+.article-title,
+.copyright {
+  text-align: center;
 }
 .header .blog-title {
   margin: 5px 0;
@@ -52,6 +74,7 @@ img {
 .header .blog-title .logo {
   font-size: 44px;
   letter-spacing: 15;
+  font-family: "Microsoft JhengHei";
 }
 .header .navbar {
   border-top: 1px solid #f1f1f1;
@@ -83,13 +106,5 @@ img {
   font-weight: 600;
   font-size: 27px;
   line-height: 50px;
-  color: #555;
-}
-.sidebar {
-  float: right;
-  width: 280px;
-  padding: 20px 0;
-  height: 1000px;
-  position: relative;
-  border: 1px solid #f00;
+  color: #888;
 }
