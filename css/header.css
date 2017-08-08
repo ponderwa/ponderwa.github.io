@@ -1,6 +1,7 @@
 .header .blog-title {
   margin: 5px 0;
   padding: 20px 0;
+  text-align: center;
 }
 .header .blog-title .logo {
   font-size: 44px;
@@ -38,4 +39,9 @@
   font-size: 27px;
   line-height: 50px;
   color: #888;
+}
+@media (max-width: 970px) {
+  .icon {
+    display: none;
+  }
 }

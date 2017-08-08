@@ -39,21 +39,8 @@ a {
   .main {
     width: 100%;
   }
-  .siderbar {
-    display: none;
-  }
-}
-.sidebar {
-  float: right;
-  width: 280px;
-  padding: 20px 0;
-  height: 1000px;
-  position: relative;
-  border: 1px solid #f00;
-}
-@media (max-width: 970px) {
-  .sidebar {
-    display: none;
+  .container {
+    padding: 0;
   }
 }
 img {
@@ -70,6 +57,7 @@ img {
 .header .blog-title {
   margin: 5px 0;
   padding: 20px 0;
+  text-align: center;
 }
 .header .blog-title .logo {
   font-size: 44px;
@@ -107,4 +95,22 @@ img {
   font-size: 27px;
   line-height: 50px;
   color: #888;
+}
+@media (max-width: 970px) {
+  .icon {
+    display: none;
+  }
+}
+.sidebar {
+  float: right;
+  width: 280px;
+  padding: 20px 0;
+  height: 1000px;
+  position: relative;
+  border: 1px solid #f00;
+}
+@media (max-width: 970px) {
+  .sidebar {
+    display: none;
+  }
 }
