@@ -36,6 +36,9 @@
   font-weight: 600;
   font-size: 16px;
 }
+.header .navbar .menu .menu-item .menu-item-li .menu-item-link:hover {
+  color: #f75357;
+}
 .header .icon {
   float: right;
   width: 280px;
@@ -47,6 +50,9 @@
   font-size: 27px;
   line-height: 50px;
   color: #888;
+}
+.header .icon .icon-link:hover {
+  color: #f75357;
 }
 @media (max-width: 970px) {
   .icon {
