@@ -50,10 +50,21 @@ a {
   font-size: 30px;
   position: relative;
 }
-.section-tag {
-  float: right;
+.post-meta {
+  color: #888;
+  position: absolute;
+}
+.calendar {
+  position: absolute;
   display: inline-block;
-  margin-left: 30px;
+}
+.section-tag {
+  float: left;
+  margin-left: 150px;
+}
+.article-tag {
+  color: #888;
+  margin-left: 5px;
 }
 .readmore {
   margin-bottom: 5px;
@@ -70,6 +81,35 @@ a {
   font-weight: bold;
   background-color: #f75357;
   text-decoration: none;
+}
+.paginator {
+  text-align: center;
+}
+.paginator .page-number {
+  margin: 0 7px;
+  font-size: 20px;
+}
+.tagclouda {
+  padding: 5px 5px;
+  text-align: center;
+  font-weight: bold;
+}
+.tagcloud {
+  border-radius: 20px;
+  padding: 5px 5px;
+  text-align: center;
+}
+.logo-img {
+  width: 150px;
+  border-radius: 75px;
+}
+.favicon {
+  text-align: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+.signature {
+  font-family: "Microsoft Himalaya";
+  font-size: 18px;
 }
 .header .blog-title {
   margin: 5px 0;
@@ -144,7 +184,6 @@ img {
   float: right;
   width: 280px;
   padding: 20px 0;
-  height: 1000px;
   position: relative;
 }
 @media (max-width: 970px) {

@@ -2,7 +2,6 @@
   float: right;
   width: 280px;
   padding: 20px 0;
-  height: 1000px;
   position: relative;
 }
 @media (max-width: 970px) {
