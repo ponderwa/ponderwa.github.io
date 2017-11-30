@@ -44,30 +44,37 @@ a {
 }
 .article-section {
   border-bottom: 1px solid #f1f1f1;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .article-section .article-link {
   font-size: 30px;
   position: relative;
 }
+.post-content {
+  text-align: center;
+}
 .post-meta {
   color: #888;
-  position: absolute;
+  text-align: center;
+  background-color: #f00;
+  border: 1px solid #00f;
 }
 .calendar {
-  position: absolute;
   display: inline-block;
+  float: left;
+  border: 1px solid #ff0;
 }
 .section-tag {
   float: left;
-  margin-left: 150px;
+  margin-left: 50px;
+  border: 1px solid #000;
 }
 .article-tag {
   color: #888;
   margin-left: 5px;
 }
 .readmore {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .readmore-link {
   padding: 5px 10px;
@@ -81,6 +88,10 @@ a {
   font-weight: bold;
   background-color: #f75357;
   text-decoration: none;
+}
+.for-test {
+  width: 100%;
+  line-height: 1.5;
 }
 .paginator {
   text-align: center;
@@ -111,6 +122,13 @@ a {
   font-family: "Microsoft Himalaya";
   font-size: 18px;
   color: #888;
+}
+.archive-test {
+  text-align: center;
+  background-color: #ffb6c1;
+}
+.content {
+  text-align: center;
 }
 .header .blog-title {
   margin: 5px 0;
@@ -168,7 +186,8 @@ a {
   width: 280px;
 }
 .header .icon .icon-link {
-  margin-right: 20px;
+  float: right;
+  margin-left: 20px;
   display: inline-block;
   font-weight: 600;
   font-size: 27px;
@@ -185,10 +204,7 @@ a {
   .blog-title {
     padding: 0 0 50px 0;
     margin: 0 0 50px 0;
-    position: fixed;
     top: 0;
-    z-index: 1;
-    background-color: #fff;
   }
 }
 img {
@@ -209,4 +225,36 @@ img {
   .sidebar {
     display: none;
   }
+}
+.post-nav {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #ff0;
+}
+.toc-article {
+  background: #eee;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  margin: 1.5em 0 0.3em 1.5em;
+  padding: 1.2em 1em 0 1em;
+  max-width: 28%;
+}
+.toc-title {
+  font-size: 120%;
+}
+#toc {
+  line-height: 1em;
+  font-size: 0.9em;
+  float: right;
+}
+.toc {
+  padding: 0;
+  margin: 1em;
+  line-height: 1.8em;
+}
+li {
+  list-style-type: none;
+}
+.toc-child {
+  margin-left: 1em;
 }
