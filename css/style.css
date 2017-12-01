@@ -51,23 +51,17 @@ a {
   position: relative;
 }
 .post-content {
-  text-align: center;
+  text-align: left;
 }
 .post-meta {
   color: #888;
   text-align: center;
-  background-color: #f00;
-  border: 1px solid #00f;
 }
 .calendar {
   display: inline-block;
-  float: left;
-  border: 1px solid #ff0;
 }
 .section-tag {
-  float: left;
   margin-left: 50px;
-  border: 1px solid #000;
 }
 .article-tag {
   color: #888;
@@ -214,6 +208,9 @@ img {
 .article-title,
 .copyright {
   text-align: center;
+}
+.article-body {
+  text-align: left;
 }
 .sidebar {
   float: right;
