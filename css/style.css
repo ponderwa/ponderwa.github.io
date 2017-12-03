@@ -128,6 +128,7 @@ a {
   margin: 5px 0;
   padding: 20px 0;
   text-align: center;
+  background-color: #fff;
 }
 .header .blog-title .logoa {
   font-size: 44px;
@@ -165,7 +166,7 @@ a {
 }
 .header .navbar .menu .menu-item .menu-item-li {
   display: inline-block;
-  margin-right: 30px;
+  padding: 0 15px;
 }
 .header .navbar .menu .menu-item .menu-item-li .menu-item-link {
   line-height: 50px;
@@ -195,14 +196,26 @@ a {
   .icon {
     display: none;
   }
-  .blog-title {
-    padding: 0 0 50px 0;
-    margin: 0 0 50px 0;
-    top: 0;
+}
+@media screen and (max-width: 800px) {
+  .header .blog-title .logoa,
+  .header .blog-title .logo {
+    font-size: 22px;
+    letter-spacing: 10;
+  }
+  .header .blog-title {
+    padding: 0;
+  }
+  .header .navbar,
+  .header .navbar .menu-item {
+    text-align: center;
+  }
+  .header .navbar .menu-item-li {
+    margin: 0 auto;
   }
 }
 img {
-  width: 300px;
+  width: 90%;
   text-align: center;
 }
 .article-title,
@@ -234,7 +247,8 @@ img {
   border-radius: 10px;
   margin: 1.5em 0 0.3em 1.5em;
   padding: 1.2em 1em 0 1em;
-  max-width: 28%;
+  max-width: 26%;
+  float: left;
 }
 .toc-title {
   font-size: 120%;

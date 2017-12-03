@@ -2,6 +2,7 @@
   margin: 5px 0;
   padding: 20px 0;
   text-align: center;
+  background-color: #fff;
 }
 .header .blog-title .logoa {
   font-size: 44px;
@@ -39,7 +40,7 @@
 }
 .header .navbar .menu .menu-item .menu-item-li {
   display: inline-block;
-  margin-right: 30px;
+  padding: 0 15px;
 }
 .header .navbar .menu .menu-item .menu-item-li .menu-item-link {
   line-height: 50px;
@@ -69,9 +70,21 @@
   .icon {
     display: none;
   }
-  .blog-title {
-    padding: 0 0 50px 0;
-    margin: 0 0 50px 0;
-    top: 0;
+}
+@media screen and (max-width: 800px) {
+  .header .blog-title .logoa,
+  .header .blog-title .logo {
+    font-size: 22px;
+    letter-spacing: 10;
+  }
+  .header .blog-title {
+    padding: 0;
+  }
+  .header .navbar,
+  .header .navbar .menu-item {
+    text-align: center;
+  }
+  .header .navbar .menu-item-li {
+    margin: 0 auto;
   }
 }
