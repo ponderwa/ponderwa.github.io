@@ -1,5 +1,5 @@
 .header .blog-title {
-  margin: 5px 0;
+  margin: 0px 0;
   padding: 20px 0;
   text-align: center;
   background-color: #fff;
@@ -27,27 +27,27 @@
 .header .blog-title .logo:hover {
   color: #f75357;
 }
-.header .navbar {
+.header .navbarr {
   border-top: 1px solid #f1f1f1;
   border-bottom: 1px solid #f1f1f1;
 }
-.header .navbar .menu {
+.header .navbarr .menu {
   display: inline-block;
 }
-.header .navbar .menu .menu-item {
+.header .navbarr .menu .menu-item {
   margin: 0;
   padding: 0;
 }
-.header .navbar .menu .menu-item .menu-item-li {
+.header .navbarr .menu .menu-item .menu-item-li {
   display: inline-block;
   padding: 0 15px;
 }
-.header .navbar .menu .menu-item .menu-item-li .menu-item-link {
+.header .navbarr .menu .menu-item .menu-item-li .menu-item-link {
   line-height: 50px;
   font-weight: 600;
   font-size: 16px;
 }
-.header .navbar .menu .menu-item .menu-item-li .menu-item-link:hover {
+.header .navbarr .menu .menu-item .menu-item-li .menu-item-link:hover {
   color: #f75357;
 }
 .header .icon {
@@ -76,9 +76,6 @@
   .header .blog-title .logo {
     font-size: 22px;
     letter-spacing: 10;
-  }
-  .header .blog-title {
-    padding: 0;
   }
   .header .navbar,
   .header .navbar .menu-item {
