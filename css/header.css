@@ -85,3 +85,6 @@
     margin: 0 auto;
   }
 }
+.navbar-toggle {
+  float: right;
+}
