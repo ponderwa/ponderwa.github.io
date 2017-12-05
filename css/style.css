@@ -4,17 +4,29 @@
   text-align: center;
   float: left;
 }
+@media (max-width: 480px) {
+  .blog-title {
+    padding: 0;
+    line-height: 38px;
+  }
+}
 .logo {
   font-size: 44px;
   letter-spacing: 15;
   font-family: sans-serif;
-  background-color: #888;
+  background-color: #222;
   color: #fff;
-  border: 1px solid #888;
+  border: 1px solid #222;
   border-radius: 10px;
 }
 .logo:hover {
   color: #f75357;
+}
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+    margin: 0;
+  }
 }
 .logoa {
   font-size: 44px;
@@ -28,14 +40,27 @@
   color: #f75357;
   font-size: 44px;
 }
+@media (max-width: 480px) {
+  .logoa {
+    font-size: 16px;
+    margin: auto 0;
+  }
+}
 .nav-button {
   float: right;
-  display: none;
+  width: 40px;
+  display: inline-block;
 }
 .favicon-header {
-  border: 1px solid #f00;
+  border-top: 1px solid #eee;
+  padding-top: 18px;
   text-align: center;
   display: none;
+}
+@media (max-width: 480px) {
+  .favicon-header {
+    display: block;
+  }
 }
 .nav-bar {
   border-top: 1px solid #f1f1f1;
@@ -43,6 +68,11 @@
 }
 .menu-bar {
   display: inline-block;
+}
+@media (max-width: 480px) {
+  .nav-bar {
+    text-align: center;
+  }
 }
 .menu-item {
   margin: 0;
@@ -52,6 +82,12 @@
   display: inline-block;
   padding: 0 15px;
 }
+@media (max-width: 480px) {
+  .menu-item-li:nth-child(4),
+  .menu-item-li:nth-child(5) {
+    display: none;
+  }
+}
 .menu-item-link {
   line-height: 50px;
   font-weight: 600;
@@ -60,10 +96,20 @@
 .menu-item-link:hover {
   color: #f75357;
 }
+@media (max-width: 480px) {
+  .menu-item-link {
+    line-height: 40px;
+  }
+}
 .icon-bar {
   float: right;
   width: 280px;
   padding-right: 15px;
+}
+@media (max-width: 480px) {
+  .icon-bar {
+    display: none;
+  }
 }
 .icon-link {
   float: right;
@@ -88,11 +134,19 @@ img {
 .article-body {
   text-align: left;
 }
+.footer {
+  border-top: 1px solid #eee;
+}
 .sidebar {
   float: right;
   width: calc(33% - 40px);
   padding: 20px 0;
   position: relative;
+}
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
 }
 .logo-img {
   width: 130px;
@@ -102,7 +156,6 @@ img {
   font-family: "Microsoft Himalaya";
   font-size: 18px;
   color: #888;
-  border-bottom: 1px solid #888;
 }
 *,
 :after,
@@ -143,9 +196,19 @@ li {
   padding: 0 20px;
   position: relative;
 }
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 .main {
   width: 67%;
   display: inline-block;
+}
+@media (max-width: 480px) {
+  .main {
+    width: 100%;
+  }
 }
 .article-section {
   border-bottom: 1px solid #f1f1f1;
