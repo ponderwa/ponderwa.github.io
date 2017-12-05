@@ -9,123 +9,91 @@
 <title>ponderwa</title>
 
 
+
     <link rel="shortcut icon" href="/images/favicon.ico">
+
 
 
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/font-awesome.css">
+<!--<link rel="stylesheet" href="/css/bootstrap.min.css">-->
 
-<link rel="stylesheet" href="/css/bootstrap.min.css">
 
-<!--<script type="javascript" src="/source/js/jquery-3.2.1.min.js"></script>-->
-<!--<script  type="javascript" src="/source/js/bootstrap.min.js"></script>-->
+<!--js引用必须使用ejs语法，html标签无效-->
 
-<script src="/js/jquery-3.2.1.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    
-<header class="header ">
-<!--<nav class="navbar navbar-default navbar-fixed-top noBorder" role="navigation">-->
-    <!--<div class="container">-->
+    <header class="header">
+    <div class="container">
 
-        <!--<div class="navbar-header">-->
-            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
-                <!--<span class="sr-only">Toggle navigation</span>-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-            <!--</button>-->
-            <!--<a class="navbar-brand brandStyle" href="#">Creative Company</a>-->
-        <!--</div>-->
+        <!--标题-->
+        <div class="title clearfix">
+            <h1 class="blog-title">
+                <a href="/about/" class="logo">ponderwa</a>
+                <p class="logoa">'s <a href="/" >blog</a></p>
+            </h1>
 
-        <!--<div class="collapse navbar-collapse noPadding"	id="myNavbar">-->
-            <!--<div class="navbar-right menustyle">-->
-                <!--<ul class="nav navbar-nav">-->
-                    <!--<li><a href="#"><p>home</p></a></li>-->
-                    <!--<li><a href="#"><p>services</p></a></li>-->
-                    <!--<li><a href="#"><p>contact us</p></a></li>-->
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</div>-->
-
-    <!--</div>-->
-<!--</nav>-->
-<!--</header>-->
-
-
-
-
-
-
-    <div class="navbar navbar-default navbar-fixed-top noBorder" role="navigation">
-        <h1 class="blog-title">
-            <a href="/" class="logo">ponderwa</a>
-            <a href="/" class="logoa">'s blog</a>
-        </h1>
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#myNavbar" >
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-    </div>
-
-
-    <div class="navbarr">
-
-        <div class="collapse navbar-collapse noPadding"	id="myNavbar">
-            <div class="navbar-right menustyle">
-                <ul class="nav navbar-nav">
-                    
-                    <li class="menu-item-li">
-                        <a href="/categories/essay/" class="menu-item-link">随笔</a>
-                    </li>
-                    
-                    <li class="menu-item-li">
-                        <a href="/categories/reading/" class="menu-item-link">读书</a>
-                    </li>
-                    
-                    <li class="menu-item-li">
-                        <a href="/categories/manual/" class="menu-item-link">折腾</a>
-                    </li>
-                    
-                    <li class="menu-item-li">
-                        <a href="/categories/travels/" class="menu-item-link">行记</a>
-                    </li>
-                    
-                    <li class="menu-item-li">
-                        <a href="/about/" class="menu-item-link">关于我</a>
-                    </li>
-                    
-                    <li class="menu-item-li">
-                        <a href="/archives/" class="menu-item-link">归档</a>
-                    </li>
-                    
-                </ul>
+            <div class="nav-button">
+                <button type="button" class="" >
+                    <span class="">Toggle navigation</span>
+                    <span class=""></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                </button>
             </div>
+        </div>
 
-        <!--<div class="collapse navbar-collapse noPadding"	id="myNavbar">-->
-            <!--<div class="navbar-right menustyle">-->
-                <!--<ul class="nav navbar-nav">-->
-                    <!--<li><a href="#"><p>home</p></a></li>-->
-                    <!--<li><a href="#"><p>services</p></a></li>-->
-                    <!--<li><a href="#"><p>contact us</p></a></li>-->
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</div>-->
+        <!--头像与签名-->
+        <div class="favicon-header">
+            <div class="favicon">
+                <img class="logo-img" src="/images/favicon.png" alt="fun" >
+                <!--<p>你是不是有点禁欲啊</p>-->
+            </div>
+            <div class="signature">
+                <p>你是不是有点禁欲啊</p>
+            </div>
+        </div>
 
+        <!--导航条-->
+        <div class="nav-bar">
+            <!--目录条-->
+            <div class="menu-bar">
+                <div class="">
+                    <ul class="menu-item">
 
+                        
+                        <li class="menu-item-li">
+                            <a class="menu-item-link" href="/categories/essay/" >随笔</a>
+                        </li>
+                        
+                        <li class="menu-item-li">
+                            <a class="menu-item-link" href="/categories/reading/" >读书</a>
+                        </li>
+                        
+                        <li class="menu-item-li">
+                            <a class="menu-item-link" href="/categories/manual/" >折腾</a>
+                        </li>
+                        
+                        <li class="menu-item-li">
+                            <a class="menu-item-link" href="/categories/travels/" >行记</a>
+                        </li>
+                        
+                        <li class="menu-item-li">
+                            <a class="menu-item-link" href="/about/" >关于我</a>
+                        </li>
+                        
+                        <li class="menu-item-li">
+                            <a class="menu-item-link" href="/archives/" >归档</a>
+                        </li>
+                        
 
+                    </ul>
+                </div>
+            </div>
+            <!--图标条-->
+            <div class="icon-bar">
 
-
-
-
-            <div class="icon">
                 
                 <a class="icon-link" href="https://github.com/">
                     <i class="fa fa-github"></i>
@@ -135,10 +103,95 @@
                     <i class="fa fa-twitter"></i>
                 </a>
                 
+
             </div>
         </div>
+
     </div>
 </header>
+
+
+
+
+<!--&lt;!&ndash;改前copy&ndash;&gt;-->
+<!--<header class="header ">-->
+    <!--<div class="container">-->
+
+        <!--<div class="navbar navbar-default navbar-fixed-top noBorder" role="navigation">-->
+            <!--<h1 class="blog-title">-->
+                <!--<a href="/" class="logo">ponderwa</a>-->
+                <!--<a href="/" class="logoa">'s blog</a>-->
+            <!--</h1>-->
+
+            <!--<div class="favicon-header">-->
+                <!--<div >-->
+                    <!--<img class="logo-img" src="/images/favicon.png" alt="fun" >-->
+                <!--</div>-->
+                <!--<br>-->
+                <!--<div class="signature">-->
+                    <!--<p>你是不是有点禁欲啊</p>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="navbar-header">-->
+                <!--<button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#myNavbar" >-->
+                    <!--<span class="sr-only">Toggle navigation</span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                <!--</button>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+        <!--<div class="navbarr">-->
+            <!--<div class="collapse navbar-collapse noPadding"	id="myNavbar">-->
+                <!--<div class="navbar-right menustyle">-->
+                    <!--<ul class="nav navbar-nav">-->
+                        <!---->
+                        <!--<li class="menu-item-li">-->
+                            <!--<a href="/categories/essay/" class="menu-item-link">随笔</a>-->
+                        <!--</li>-->
+                        <!---->
+                        <!--<li class="menu-item-li">-->
+                            <!--<a href="/categories/reading/" class="menu-item-link">读书</a>-->
+                        <!--</li>-->
+                        <!---->
+                        <!--<li class="menu-item-li">-->
+                            <!--<a href="/categories/manual/" class="menu-item-link">折腾</a>-->
+                        <!--</li>-->
+                        <!---->
+                        <!--<li class="menu-item-li">-->
+                            <!--<a href="/categories/travels/" class="menu-item-link">行记</a>-->
+                        <!--</li>-->
+                        <!---->
+                        <!--<li class="menu-item-li">-->
+                            <!--<a href="/about/" class="menu-item-link">关于我</a>-->
+                        <!--</li>-->
+                        <!---->
+                        <!--<li class="menu-item-li">-->
+                            <!--<a href="/archives/" class="menu-item-link">归档</a>-->
+                        <!--</li>-->
+                        <!---->
+                    <!--</ul>-->
+                <!--</div>-->
+
+                <!--<div class="icon">-->
+                    <!---->
+                    <!--<a class="icon-link" href="https://github.com/">-->
+                        <!--<i class="fa fa-github"></i>-->
+                    <!--</a>-->
+                    <!---->
+                    <!--<a class="icon-link" href="https://lofter.com/">-->
+                        <!--<i class="fa fa-twitter"></i>-->
+                    <!--</a>-->
+                    <!---->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</div>-->
+<!--</header>-->
 
     <div class="content">
         <div class="container">
@@ -332,8 +385,7 @@
     </div>
 
     <aside class="sidebar">
-
-   
+    
 
         
             <div class="favicon">
@@ -345,8 +397,7 @@
     </div>
 </div>
 
-
-        
+    
             
     <div class="tagcloud">
       <span class="tagclouda" >标签云</span>
@@ -358,10 +409,7 @@
 
 
 
-
-        
-
-
+    
     
 </aside>
 

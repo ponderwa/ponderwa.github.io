@@ -1,11 +1,16 @@
 .sidebar {
   float: right;
-  width: 280px;
+  width: calc(33% - 40px);
   padding: 20px 0;
   position: relative;
 }
-@media (max-width: 970px) {
-  .sidebar {
-    display: none;
-  }
+.logo-img {
+  width: 130px;
+  border-radius: 85px;
+}
+.signature {
+  font-family: "Microsoft Himalaya";
+  font-size: 18px;
+  color: #888;
+  border-bottom: 1px solid #888;
 }

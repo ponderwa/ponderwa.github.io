@@ -1,60 +1,71 @@
-.header .blog-title {
-  margin: 0px 0;
-  padding: 20px 0;
+.blog-title {
+  margin: 0;
+  padding-left: 15px;
   text-align: center;
-  background-color: #fff;
+  float: left;
 }
-.header .blog-title .logoa {
+.logo {
+  font-size: 44px;
+  letter-spacing: 15;
+  font-family: sans-serif;
+  background-color: #888;
+  color: #fff;
+  border: 1px solid #888;
+  border-radius: 10px;
+}
+.logo:hover {
+  color: #f75357;
+}
+.logoa {
   font-size: 44px;
   letter-spacing: 15;
   font-family: "Microsoft JhengHei";
   line-height: 100%;
+  display: inline-block;
 }
-.header .blog-title .logoa::after {
+.logoa::after {
   content: ".";
   color: #f75357;
   font-size: 44px;
 }
-.header .blog-title .logo {
-  font-size: 44px;
-  letter-spacing: 15;
-  font-family: sans-serif;
-  background-color: #000;
-  color: #fff;
-  border: 1px solid #000;
-  border-radius: 10px;
+.nav-button {
+  float: right;
+  display: none;
 }
-.header .blog-title .logo:hover {
-  color: #f75357;
+.favicon-header {
+  border: 1px solid #f00;
+  text-align: center;
+  display: none;
 }
-.header .navbarr {
+.nav-bar {
   border-top: 1px solid #f1f1f1;
   border-bottom: 1px solid #f1f1f1;
 }
-.header .navbarr .menu {
+.menu-bar {
   display: inline-block;
 }
-.header .navbarr .menu .menu-item {
+.menu-item {
   margin: 0;
   padding: 0;
 }
-.header .navbarr .menu .menu-item .menu-item-li {
+.menu-item-li {
   display: inline-block;
   padding: 0 15px;
 }
-.header .navbarr .menu .menu-item .menu-item-li .menu-item-link {
+.menu-item-link {
   line-height: 50px;
   font-weight: 600;
   font-size: 16px;
 }
-.header .navbarr .menu .menu-item .menu-item-li .menu-item-link:hover {
+.menu-item-link:hover {
   color: #f75357;
 }
-.header .icon {
+.icon-bar {
   float: right;
   width: 280px;
+  padding-right: 15px;
 }
-.header .icon .icon-link {
+.icon-link {
   float: right;
   margin-left: 20px;
   display: inline-block;
@@ -63,28 +74,6 @@
   line-height: 50px;
   color: #888;
 }
-.header .icon .icon-link:hover {
+.icon-link:hover {
   color: #f75357;
-}
-@media (max-width: 970px) {
-  .icon {
-    display: none;
-  }
-}
-@media screen and (max-width: 800px) {
-  .header .blog-title .logoa,
-  .header .blog-title .logo {
-    font-size: 22px;
-    letter-spacing: 10;
-  }
-  .header .navbar,
-  .header .navbar .menu-item {
-    text-align: center;
-  }
-  .header .navbar .menu-item-li {
-    margin: 0 auto;
-  }
-}
-.navbar-toggle {
-  float: right;
 }
