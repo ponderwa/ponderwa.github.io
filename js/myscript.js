@@ -1,20 +1,14 @@
-$(function(){
+function test() {
+    var haha = document.getElementById("testt");
+    var hahaha = document.getElementById("testtt");
 
-	var nav = $('.navbar'),
-		doc = $(document),
-		win = $(window);
-
-	win.scroll(function() {
-
-		if (doc.scrollTop() > 80) {
-			nav.addClass('scrolled');
-		} else {
-			nav.removeClass('scrolled');
-		}
-
-	});
-
-	// Trigger the scroll listener on page load
-	
-	win.scroll();
-});
+    if (haha.style.display == 'none') {
+        haha.style.display = 'block';
+        hahaha.style.display = 'block';
+    }
+    else {
+        haha.style.display = 'none';
+        hahaha.style.display = 'none';
+    }
+    // alert("是的，这是一个骗局！");
+}
