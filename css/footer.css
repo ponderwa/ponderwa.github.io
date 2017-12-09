@@ -21,6 +21,7 @@
 .copyright {
   margin: 0 auto;
   line-height: 40px;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media (max-width: 480px) {
   .copyright {
