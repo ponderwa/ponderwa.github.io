@@ -1,3 +1,29 @@
 .footer {
   border-top: 1px solid #eee;
+  text-align: center;
+}
+.icon-bar-footer {
+  display: none;
+}
+@media (max-width: 480px) {
+  .icon-bar-footer {
+    display: block;
+  }
+}
+.icon-link-footer {
+  padding: 0 10px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 50px;
+  color: #888;
+}
+.copyright {
+  margin: 0 auto;
+  line-height: 40px;
+}
+@media (max-width: 480px) {
+  .copyright {
+    font-size: 14px;
+  }
 }

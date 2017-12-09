@@ -14,18 +14,18 @@
 
 
 
-
-<link rel="stylesheet" href="/css/font-awesome.css">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/font-awesome.css">
+
 
 <!--js引用必须使用ejs语法，html标签无效-->
 
 </head>
 
 <body>
-    <div class="container">
+    
     <header class="header">
-
+        <div class="container">
         <!--标题-->
         <div class="title clearfix">
             <div class="blog-title">
@@ -54,7 +54,7 @@
         </div>
 
         <!--导航条-->
-        <div class="nav-bar" id="test" >
+        <div class="nav-bar" id="testtt" >
             <!--目录条-->
             <div class="menu-bar">
                 <div class="">
@@ -90,7 +90,7 @@
                 </div>
             </div>
             <!--图标条-->
-            <div class="icon-bar">
+            <div class="icon-bar-header">
 
                 
                 <a class="icon-link" href="https://github.com/">
@@ -104,9 +104,8 @@
 
             </div>
         </div>
-
     </div>
-</header>
+    </header>
 
 
 
@@ -275,14 +274,21 @@
     </div>
 
     <div class="container">
-        <div class="footer">
-        <div class="reserved">
+    <div class="footer">
+        <div class="icon-bar-footer">
+            
+            <a class="icon-link-footer" href="https://github.com/">
+                <i class="fa fa-github"></i>
+            </a>
+            
+            <a class="icon-link-footer" href="https://lofter.com/">
+                <i class="fa fa-twitter"></i>
+            </a>
+            
         </div>
-
-        <div class="copyright">
-            <p>Copyright © 2017. All Rights Reserved.</p>
+        <div>
+            <p class="copyright">Copyright © 2017. All Rights Reserved.</p>
         </div>
-
     </div>
 </div>
 
