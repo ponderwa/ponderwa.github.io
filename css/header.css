@@ -29,11 +29,11 @@
 }
 .logo {
   font-size: 44px;
-  font-family: "Chancery";
-  background-color: #222;
+  font-family: "Gigi", "petrascriptef-alternate", "chiller", "Chancery";
+  background-color: #333;
   color: #fff;
-  border: 1px solid #222;
-  border-radius: 10px;
+  border: 1px solid #333;
+  border-radius: 13px;
   height: 50px;
 }
 .logo:hover {
@@ -47,9 +47,11 @@
 }
 .logoa {
   font-size: 44px;
-  font-family: "Chancery";
+  font-family: "chiller";
+  font-weight: bold;
   line-height: 100%;
   display: inline-block;
+  color: #444;
 }
 .logoa::after {
   content: ".";
@@ -64,8 +66,18 @@
 }
 .nav-button {
   float: right;
-  width: 40px;
-  display: inline-block;
+  font-size: 32px;
+  border-radius: 7px;
+  text-align: center;
+  margin-top: 4px;
+  margin-right: 10px;
+  color: #444;
+  display: none;
+}
+@media (max-width: 480px) {
+  .nav-button {
+    display: block;
+  }
 }
 .favicon-header {
   padding-top: 18px;
