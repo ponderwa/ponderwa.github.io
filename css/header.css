@@ -46,7 +46,7 @@
 }
 .logoa {
   font-size: 44px;
-  font-family: "chiller";
+  font-family: "Chiller";
   font-weight: bold;
   line-height: 100%;
   display: inline-block;
@@ -54,7 +54,7 @@
 }
 .logoa::after {
   content: ".";
-  color: #00f;
+  color: #f75357;
   font-size: 44px;
 }
 @media (max-width: 480px) {

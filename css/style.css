@@ -46,7 +46,7 @@
 }
 .logoa {
   font-size: 44px;
-  font-family: "chiller";
+  font-family: "Chiller";
   font-weight: bold;
   line-height: 100%;
   display: inline-block;
@@ -54,7 +54,7 @@
 }
 .logoa::after {
   content: ".";
-  color: #00f;
+  color: #f75357;
   font-size: 44px;
 }
 @media (max-width: 480px) {
@@ -286,10 +286,12 @@ img {
   border-radius: 10px;
 }
 @font-face {
-  font-family: Chancery;
-  font-style: normal;
-  src: url("../fonts/chancery/apple-chancery-webfont.eot");
-  src: local('Apple Chancery'), url("../fonts/chancery/apple-chancery-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/chancery/apple-chancery-webfont.woff2") format('woff2'), url("../fonts/chancery/apple-chancery-webfont.woff") format('woff'), url("../fonts/chancery/apple-chancery-webfont.ttf") format('truetype'), url("../fonts/chancery/apple-chancery-webfont.svg#apple-chancery") format('svg');
+  font-family: Gigi;
+  src: url("../fonts/GIGI.TTF");
+}
+@font-face {
+  font-family: Chiller;
+  src: url("../fonts/CHILLER.TTF");
 }
 *,
 :after,
