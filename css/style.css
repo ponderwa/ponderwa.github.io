@@ -54,7 +54,7 @@
 }
 .logoa::after {
   content: ".";
-  color: #f75357;
+  color: #00f;
   font-size: 44px;
 }
 @media (max-width: 480px) {
