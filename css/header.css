@@ -32,6 +32,7 @@
   font-family: "Gigi", "petrascriptef-alternate", "chiller", "Chancery";
   background-color: #222;
   color: #fff;
+  border: 1px solid #222;
   border-radius: 13px;
   height: 50px;
 }
@@ -41,6 +42,7 @@
 @media (max-width: 480px) {
   .logo {
     font-size: 20px;
+    border-radius: 7px;
     margin: 0;
   }
 }
@@ -59,8 +61,9 @@
 }
 @media (max-width: 480px) {
   .logoa {
-    font-size: 16px;
+    font-size: 19px;
     margin: auto 0;
+    margin-left: -2px;
   }
 }
 .nav-button {
@@ -78,17 +81,22 @@
     display: block;
   }
 }
+.float-button {
+  bottom: 50px;
+  right: 10px;
+  position: fixed;
+  font-size: 35px;
+  z-index: 99;
+  color: #333;
+}
 .favicon-header {
   padding-top: 18px;
   text-align: center;
   display: none;
-  opacity: 0;
-  transition: opacity 1s linear;
 }
 @media (max-width: 480px) {
   .favicon-header {
     display: block;
-    opacity: 1;
   }
 }
 .nav-bar {
