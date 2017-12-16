@@ -122,8 +122,7 @@
   padding: 0 15px;
 }
 @media (max-width: 480px) {
-  .menu-item-li:nth-child(5),
-  .menu-item-li:nth-child(6) {
+  .menu-item-li:nth-child(5) {
     display: none;
   }
 }
@@ -270,6 +269,11 @@ img {
   color: #888;
   border-bottom: 1px solid #f1f1f1;
 }
+.signature-header {
+  font-family: "Microsoft Himalaya";
+  font-size: 18px;
+  color: #888;
+}
 .tagclouda {
   padding: 5px 5px;
   text-align: center;
@@ -335,7 +339,7 @@ img {
 }
 .archive {
   text-align: left;
-  line-height: 2.5;
+  line-height: 2;
   font-family: Athelas, STHeiti, Microsoft Yahei, serif false;
 }
 .headline {
