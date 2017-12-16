@@ -19,6 +19,11 @@
   color: #888;
   border-bottom: 1px solid #f1f1f1;
 }
+.signature-header {
+  font-family: "Microsoft Himalaya";
+  font-size: 18px;
+  color: #888;
+}
 .tagclouda {
   padding: 5px 5px;
   text-align: center;
