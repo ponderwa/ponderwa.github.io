@@ -28,8 +28,9 @@
   }
 }
 .logo {
-  font-size: 44px;
-  font-family: "Gigi", "petrascriptef-alternate", "chiller", "Chancery";
+  font-size: 33px;
+  font-family: "Chancery";
+  letter-spacing: -1px;
   background-color: #222;
   color: #fff;
   border: 1px solid #222;
@@ -41,9 +42,10 @@
 }
 @media (max-width: 480px) {
   .logo {
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 7px;
     margin: 0;
+    letter-spacing: 0px;
   }
 }
 .logoa {
@@ -82,12 +84,12 @@
   }
 }
 .float-button {
-  bottom: 50px;
+  bottom: 80px;
   right: 10px;
   position: fixed;
   font-size: 35px;
   z-index: 99;
-  color: #333;
+  color: #666;
 }
 .favicon-header {
   padding-top: 18px;

@@ -1,0 +1,31 @@
+.archive {
+  text-align: left;
+  line-height: 2.5;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif false;
+}
+.headline {
+  color: #aaa;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.article-date {
+  color: #777;
+  margin-left: 35px;
+}
+.archive-item {
+  border-left: 1px solid #222;
+}
+.archive-item:hover {
+  border-left: 3px solid #8a8a8a;
+  transition: 1.3s ease-out;
+  transform: translateX(15px);
+}
+.archive-item:hover .archive-post-time {
+  color: #7c7c7c;
+}
+.archive-item:hover .archive-post-title .archive-post-link {
+  color: #7c7c7c;
+}
+.article-link {
+  margin-left: 10px;
+}

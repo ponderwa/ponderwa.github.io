@@ -28,8 +28,9 @@
   }
 }
 .logo {
-  font-size: 44px;
-  font-family: "Gigi", "petrascriptef-alternate", "chiller", "Chancery";
+  font-size: 33px;
+  font-family: "Chancery";
+  letter-spacing: -1px;
   background-color: #222;
   color: #fff;
   border: 1px solid #222;
@@ -41,9 +42,10 @@
 }
 @media (max-width: 480px) {
   .logo {
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 7px;
     margin: 0;
+    letter-spacing: 0px;
   }
 }
 .logoa {
@@ -82,12 +84,12 @@
   }
 }
 .float-button {
-  bottom: 50px;
+  bottom: 80px;
   right: 10px;
   position: fixed;
   font-size: 35px;
   z-index: 99;
-  color: #333;
+  color: #666;
 }
 .favicon-header {
   padding-top: 18px;
@@ -214,6 +216,12 @@ img {
 .footer {
   border-top: 1px solid #eee;
   text-align: center;
+  padding-top: 20px;
+}
+@media (max-width: 480px) {
+  .footer {
+    padding-top: 5px;
+  }
 }
 .icon-bar-footer {
   display: none;
@@ -268,18 +276,21 @@ img {
   font-weight: bold;
 }
 .tagcloud {
-  margin-top: 30px;
   padding: 5px;
   text-align: center;
   font-family: "Microsoft Himalaya";
   font-size: 18px;
   color: #888;
+  border-bottom: 1px solid #f1f1f1;
+}
+.tagcloud-warpper {
+  margin-top: 30px;
 }
 .paginator-div {
   padding: auto 0;
 }
 .paginationa-color>a {
-  color: #f00;
+  color: #aaa;
   border: 1px solid #888;
   border-radius: 7px;
   padding: 6px 12px;
@@ -289,11 +300,11 @@ img {
   font-family: "Microsoft JhengHei";
 }
 .paginationa>li>span {
-  color: #000;
-  border-radius: 10px;
+  color: #333;
   padding: 6px 12px;
-  margin-left: 0px;
-  border: 1px solid #555;
+  margin-left: 0;
+  font-weight: bold;
+  font-size: 18px;
 }
 .paginationa-self {
   display: inline-block;
@@ -306,6 +317,81 @@ img {
   padding-left: 0;
   margin: 20px 0;
   border-radius: 10px;
+}
+.post-pagin {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.next-article {
+  float: right;
+}
+.prev-article {
+  float: left;
+}
+.prv_next_title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #313131;
+}
+.archive {
+  text-align: left;
+  line-height: 2.5;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif false;
+}
+.headline {
+  color: #aaa;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.article-date {
+  color: #777;
+  margin-left: 35px;
+}
+.archive-item {
+  border-left: 1px solid #222;
+}
+.archive-item:hover {
+  border-left: 3px solid #8a8a8a;
+  transition: 1.3s ease-out;
+  transform: translateX(15px);
+}
+.archive-item:hover .archive-post-time {
+  color: #7c7c7c;
+}
+.archive-item:hover .archive-post-title .archive-post-link {
+  color: #7c7c7c;
+}
+.article-link {
+  margin-left: 10px;
+}
+.tag-cloud {
+  margin: 2em 0 3em;
+  text-align: center;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif false;
+}
+.tag-cloud .tag-cloud-title {
+  display: inline-block;
+  font-size: 18px false;
+  color: #a9a9a9;
+  border-bottom: 2px solid $theme-color false;
+}
+.tag-cloud .tag-cloud-tags {
+  margin: 10px 0;
+}
+.tag-cloud .tag-cloud-tags a {
+  display: inline-block;
+  position: relative;
+  margin: 5px 10px;
+  word-wrap: break-word;
+  transition-duration: 0.2s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.tag-cloud .tag-cloud-tags a:active,
+.tag-cloud .tag-cloud-tags a:focus,
+.tag-cloud .tag-cloud-tags a:hover {
+  color: #888;
+  transform: scale(1.1);
 }
 @font-face {
   font-family: Gigi;
