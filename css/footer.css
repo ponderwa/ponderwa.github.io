@@ -10,6 +10,8 @@
 }
 .icon-bar-footer {
   display: none;
+  padding-top: -10px;
+  padding-bottom: -10px;
 }
 @media (max-width: 480px) {
   .icon-bar-footer {
@@ -21,11 +23,12 @@
   display: inline-block;
   font-weight: 600;
   font-size: 27px;
-  line-height: 50px;
+  line-height: 35px;
   color: #888;
 }
 .copyright {
-  margin: 0 auto;
+  margin-top: -10px;
+  margin-bottom: 0;
   line-height: 40px;
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -33,4 +36,8 @@
   .copyright {
     font-size: 14px;
   }
+}
+.fasize {
+  font-size: 25px;
+  margin-left: -2px;
 }

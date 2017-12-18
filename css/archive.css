@@ -5,15 +5,33 @@
 }
 .headline {
   color: #aaa;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
+  text-align: right;
+  margin-top: 30px;
+}
+.archive-list {
+  width: 340px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+}
+.tag-list {
+  width: 340px;
+  margin: 0 auto;
 }
 .article-date {
   color: #777;
   margin-left: 35px;
 }
+.year-style {
+  margin-left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .archive-item {
   border-left: 1px solid #222;
+  margin: 0 30px;
 }
 .archive-item:hover {
   border-left: 3px solid #8a8a8a;
