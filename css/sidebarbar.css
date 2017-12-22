@@ -22,21 +22,24 @@
 .signature-header {
   font-family: "Microsoft Himalaya";
   font-size: 18px;
-  color: #888;
 }
 .tagclouda {
+  color: #515151;
   padding: 5px 5px;
   text-align: center;
   font-weight: bold;
 }
+.sidebartag {
+  padding: 15px 0;
+  border-bottom: 1px solid #f1f1f1;
+  color: #fff;
+}
 .tagcloud {
-  padding: 5px;
+  padding: 0 5px;
   text-align: center;
   font-family: "Microsoft Himalaya";
   font-size: 18px;
-  color: #888;
-  border-bottom: 1px solid #f1f1f1;
 }
 .tagcloud-warpper {
-  margin-top: 30px;
+  padding: 0 40px;
 }
