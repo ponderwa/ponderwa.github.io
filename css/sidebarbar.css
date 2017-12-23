@@ -43,3 +43,9 @@
 .tagcloud-warpper {
   padding: 0 40px;
 }
+.player {
+  border-radius: 5px;
+  padding-top: 20px;
+  margain: 0;
+  color: #333;
+}
