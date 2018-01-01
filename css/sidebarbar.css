@@ -9,6 +9,9 @@
     display: none;
   }
 }
+.num_size {
+  font-size: 30px;
+}
 .logo-img {
   width: 130px;
   border-radius: 85px;

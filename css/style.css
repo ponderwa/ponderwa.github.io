@@ -204,7 +204,6 @@
   border-radius: 1px;
 }
 img {
-  width: 90%;
   text-align: center;
 }
 .article-title,
@@ -293,6 +292,9 @@ img {
   .sidebar {
     display: none;
   }
+}
+.num_size {
+  font-size: 30px;
 }
 .logo-img {
   width: 130px;
@@ -385,6 +387,9 @@ img {
   line-height: 2;
   font-family: Athelas, STHeiti, Microsoft Yahei, serif false;
 }
+.for_padding {
+  padding: 0 30px;
+}
 .headline {
   color: #aaa;
   font-size: 1.2em;
@@ -395,7 +400,6 @@ img {
 .archive-list {
   width: 340px;
   margin: 0 auto;
-  padding: 0 20px;
   text-align: left;
 }
 .archive-tagwall {
@@ -413,6 +417,7 @@ img {
   margin-left: 30px;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0 20px;
 }
 .archive-item {
   border-left: 1px solid #222;
@@ -496,7 +501,6 @@ a {
   color: #333;
 }
 img {
-  width: 90%;
   text-align: center;
 }
 li {
