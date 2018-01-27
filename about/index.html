@@ -123,7 +123,7 @@
               <h2></h2>
 
             </div>
-            <div align="center"><br><br>​        坐标：魔都<br><br>​        “原来没好好学习”专业+“现在在天天向上”的HW工程师<br><br>​        茫茫人海中一个不是很逗的逗比<br><br>​        原来胖的现在不想再ponder的娃<br><br>​        喜欢音乐电影戏剧等等艺术—以能体会到美感和情思进而引发思考为乐趣的伪文青<br><br>​        看了13年+英超的曼联球迷(坐等大巴司机下课中。。。)<br><br>​        买不起镜头也上不去权贵机位的吞片大王<br><br>​        脑子一热就捂不住钱包偶尔也动动手的HIFI-DIYer<br><br>​        没钱没时间也没决心，大多时间在论坛看帖子yy的户外newbee<br><br>​        坐拥Moxf8然而只会几首入门曲目的键盘侠<br><br>​        一个冲动报了名不让反悔不给退钱的CFA candidate<br><br>​        闲下来兴致来了也折腾点Coding的客串码农<br><br>​<br><br>​        字先凑到这里。。。由于没有制作评论系统，如果看到这里，又有什么话想要和我交流的，以下为联系方式，请在关键部位注明接头口令——“Ｑ：脆皮炸鸡　Ａ：买二送一”：<br><br>​        E-mail：ponderwa@163.com<br><br>​        <img src="/images/wechatqr.png" height="200px" width="200px" style="border: 1px solid #d1d1d1; border-radius: 10px;"><br><br></div>
+            <div align="center"><br><br>​        坐标：魔都<br><br>​        “原来没好好学习”专业+“现在在天天向上”的HW工程师<br><br>​        茫茫人海中一个不是很逗的逗比<br><br>​        原来胖的现在不想再ponder的娃<br><br>​        喜欢音乐电影戏剧等等艺术—以能体会到美感和情思进而引发思考为乐趣的伪文青<br><br>​        看了13年+英超的曼联球迷(坐等大巴司机下课中。。。)<br><br>​        买不起镜头也上不去权贵机位的吞片大王<br><br>​        脑子一热就捂不住钱包偶尔也动动手的HIFI-DIYer<br><br>​        没钱没时间也没决心，大多时间在论坛看帖子yy的户外newbee<br><br>​        坐拥Moxf8然而只会几首入门曲目的键盘侠<br><br>​        一个冲动报了名不让反悔不给退钱的CFA candidate<br><br>​        闲下来兴致来了也折腾点Coding的客串码农<br><br>​<br><br>​        字先凑到这里。。。由于没有制作评论系统，如果看到这里，又有什么话想要和我交流的，以下为联系方式，请在关键部位注明接头口令——“Ｑ：脆皮炸鸡　Ａ：买二送一”：<br><br>​        E-mail：ponderwa@me.com<br><br>​        <img src="/images/wechatqr.png" height="200px" width="200px" style="border: 1px solid #d1d1d1; border-radius: 10px;"><br><br></div>
 
 
         </div>
@@ -153,24 +153,97 @@
         <div>
             <p style="margin: 0 auto">All Rights Reserved.<span class="fasize"> <i class="fa fa-umbrella fasize"> </i></span> ponderwa</p>
             <p class="copyright">Copyright © 2017-2018</p>
-
+            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_uv"></span>次</span>
         </div>
     </div>
 </div>
 
 <!--cog 齿轮-->
 
+<!--访问统计-->
+<!--page counter part-->
+<script>
+    function addCount (Counter) {
+        url=$('.article-date').attr('href').trim();
+        title = $('.article-title').text().trim();
+        var query=new AV.Query(Counter);
+        //use url as unique idnetfication
+        query.equalTo("url",url);
+        query.find({
+            success: function(results){
+                if(results.length>0)
+                {
+                    var counter=results[0];
+                    counter.fetchWhenSave(true); //get recent result
+                    counter.increment("time");
+                    counter.save();
+                }
+                else
+                {
+                    var newcounter=new Counter();
+                    newcounter.set("title",title);
+                    newcounter.set("url",url);
+                    newcounter.set("time",1);
+                    newcounter.save(null,{
+                        success: function(newcounter){
+                            //alert('New object created');
+                        },
+                        error: function(newcounter,error){
+                            alert('Failed to create');
+                        }
+                    });
+                }
+            },
+            error: function(error){
+                //find null is not a error
+                alert('Error:'+error.code+" "+error.message);
+            }
+        });
+    }
+    $(function(){
+        var Counter=AV.Object.extend("Counter");
+        //only increse visit counting when intering a page
+        if ($('.article-title').length == 1)
+            addCount(Counter);
+        var query=new AV.Query(Counter);
+        query.descending("time");
+        // the sum of popular posts
+        query.limit(10);
+        query.find({
+                success: function(results){
+                    for(var i=0;i<results.length;i++)
+                    {
+                        var counter=results[i];
+                        title=counter.get("title");
+                        url=counter.get("url");
+                        time=counter.get("time");
+                        // add to the popularlist widget
+                        showcontent=title+" ("+time+")";
+                        //notice the "" in href
+                        $('.popularlist').append('<li><a href="'+url+'">'+showcontent+'</a></li>');
+                    }
+                },
+                error: function(error){
+                    alert("Error:"+error.code+" "+error.message);
+                }
+            }
+        )
+    });
+</script>
 
-
-    <!--<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>-->
 
     <!--搜狐显示ip-->
-    <!--<script type="text/javascript">-->
-        <!--document.write(returnCitySN["cip"]+','+returnCitySN["cname"])-->
-    <!--</script>-->
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <!--不蒜子统计-->
+    <!--<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>-->
 
-    <script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
-    <script>AV.initialize("mEXCLdEp9ue9QOb9KH6n2hJu-gzGzoHsz", "5Ujqy392021lStlFJ7zWadym");</script>
+
+    <!--LeanCloud-->
+    <!--<script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>-->
+    <script src="https://leancloud.cn/scripts/lib/av-0.4.6.min.js"></script>
+    <script>AV.initialize("sf9cnLlHN4TXEYtv8mJV0gkK-gzGzoHsz", "1VWnT4cL0hSFPRDaHRe8J0gP");</script>
+
+   <!--Js from own-->
     <script src="/js/myscript.js"></script>
 
 </body>
