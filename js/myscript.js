@@ -29,7 +29,7 @@ window.onscroll = function () {
     var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
     var btn = document.getElementById("float-btn");
 
-    console.log(scrollTop);
+    // console.log(scrollTop);
 
     if (scrollTop > 700) {
         btn.style.display = "block";
@@ -168,6 +168,106 @@ function test() {
 //         }
 //     )
 // });
+
+
+////////////////////////////////////////////////
+<!--访问统计及记录-->
+// <script>
+// //获取时间&时间戳&当前页面address
+// var VisitDate = new Date();
+// var timestamp = VisitDate.getTime();        //当前时间点时间戳
+// var VisitUrl = window.location.href;        //获取当前页面的url
+// console.log(VisitDate);
+// //    console.log(timestamp);
+// //    console.log(VisitUrl);
+//
+// //存IP和时间戳       使用覆盖法---另外一个class  刷新记录每个IP最新--最后访问的时间
+// var VisitRecord = AV.Object.extend('Visit_Record');
+// var visit_record = new VisitRecord();
+// visit_record.save({
+//     Time: VisitDate,
+//     IP: returnCitySN["cip"],
+//     Location: returnCitySN["cname"]
+// }).then(function(object) {
+// //        alert('LeanCloud Rocks!aaa');
+// })
+//
+//
+// //logic part    同一个IP 5min分钟内访问任意链接（开头with localhost） 总站点访问数只+1 单独在云端搞个条目
+// //              同一个IP 3min分钟内访问访问过的链接 该页面hit_counter不增加 标志变量
+//
+//
+// //1.查询当前访问IP是否存在于Last-Visit class中 不存在--创建新条目---存在--取出条目时间戳，如果大于5分种--总站点数+1--更新条目
+// //                                                                                        如果小于5分钟--更新条目
+// var queryLast = new AV.Query('Last_Visit');    //创建查询Last_Visit
+//
+// queryLast.equalTo('UrL',VisitUrl);
+// queryLast.find().then(function (results) {
+//     if(results.length > 0 ) {                           //存在--取出条目时间戳，如果大于5分种--总站点数+1--更新条目
+//         var aimEntry = results[0];
+//         var oldTime_stamp = aimEntry.get('Last_Time');
+//         console.log(oldTime_stamp);
+//         var timeDifference = (timestamp - oldTime_stamp)/1000;        //1s = 1000, 1min =100000 TimeStamp单位为ms
+//         console.log(timeDifference);
+//
+//         if(timeDifference >= 15)            //测试用15s
+//         {
+//             var query_SiteHit = new AV.Query('Hit_Counter');
+//             query_SiteHit.get('5a88f54eac502e00329b1e62').then(function (todo) {
+//                 todo.increment("HitNumber");
+//                 todo.save();
+//                 console.log("I'm here!");
+//             });
+//         }
+//         aimEntry.save({                                  //注意写入权限 否则报错
+//             Last_Time: timestamp
+//         });
+//     }
+//     else{                                                       //不存在-即第一次访问 创建新条目 存时间
+//         var LastVisit = AV.Object.extend('Last_Visit');
+//         var visit_record = new LastVisit();
+//         visit_record.save({
+//             UrL: VisitUrl,
+//             Last_Time: timestamp
+//         });
+//     }
+// });
+//
+//
+//
+//
+//
+// //查询当前URL
+// var queryHit = new AV.Query('Hit_Counter');    //创建查询Hit_Counter
+//
+// queryHit.equalTo('UrL',VisitUrl);              //返回值是AV.Query的Array 始终为非空-->真
+// queryHit.find().then(function (results){
+//         console.log(results.length);            //results.length符合要求对象个数
+//         if(results.length > 0){                 //  >0和=1;  此链接hit记录已存在，更新hit数保存结束
+// //            console.log(results[0]);
+//             var HitNumber = results[0];
+//
+//             HitNumber.increment("HitNumber");
+// //            HitNumber.fetchWhenSave(true);      //get recent result   fetchWhenSave和save    使用了 fetchWhenSave 选项，save 成功之后即可得到最新的值
+//             HitNumber.save();
+//
+//             console.log("更新hit数成功");
+//         }else{
+//             var VisitRecord = AV.Object.extend('Hit_Counter');
+//             var visit_record = new VisitRecord();
+//             visit_record.save({
+//                 UrL: VisitUrl,
+//                 HitNumber: 1
+//             });
+//
+//
+//             console.log("增加新条目成功");
+//         }
+//     },function (error) {
+//         console.log("there's no such thing.")
+//     }
+// );
+// </script>
 
 
 
