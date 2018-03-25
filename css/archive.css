@@ -21,12 +21,12 @@
 .archive-tagwall {
   text-align: right;
 }
-.tagcloudb {
+.nameb {
   border: 1px solid #a1a1a1;
   border-radius: 8px;
   color: #515151;
-  padding: 0px 5px;
-  padding-top: 100px;
+  padding: 5px 5px;
+  padding-top: 7px;
   text-align: center;
   font-weight: bold;
 }
