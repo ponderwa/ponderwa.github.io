@@ -1,4 +1,7 @@
+var SelfTestModel = 0;      //默认全局变量0
 window.onload=myfun;
+
+
 function myfun()
 {
     var btn = document.getElementById("float-btn");
@@ -78,6 +81,14 @@ function test() {
     // alert($(document).width());//浏览器时下窗口文档对于象宽度
 }
 
+function ontest() {
+    var umbrella = document.getElementById("self-test");
+
+    console.log('SelfTestModel='+ SelfTestModel);
+    umbrella.style.color = 'yellow';
+    SelfTestModel = 1 ;
+    console.log('SelfTestModel='+ SelfTestModel);
+}
 
 
 

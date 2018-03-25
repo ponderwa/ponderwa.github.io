@@ -21,6 +21,15 @@
 .archive-tagwall {
   text-align: right;
 }
+.tagcloudb {
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+  color: #515151;
+  padding: 0px 5px;
+  padding-top: 100px;
+  text-align: center;
+  font-weight: bold;
+}
 .tag-list {
   width: 340px;
   margin: 0 auto;

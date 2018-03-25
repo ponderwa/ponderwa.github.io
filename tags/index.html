@@ -8,7 +8,7 @@
 
 
 
-    <link rel="shortcut icon" href="/images/favicon1.png">
+    <link rel="shortcut icon" href="/images/3.png">
 
 
 
@@ -123,7 +123,7 @@
             </div>
             <br>
             <div class="tag-cloud-tags">
-                <a href="/tags/胖胖胖/" style="font-size: 16px;">胖胖胖</a> <a href="/tags/：）/" style="font-size: 16px;">：）</a> <a href="/tags/new-year/" style="font-size: 16px;">new_year</a> <a href="/tags/blog/" style="font-size: 28px;">blog</a> <a href="/tags/晚安/" style="font-size: 16px;">晚安</a> <a href="/tags/黑/" style="font-size: 16px;">黑</a> <a href="/tags/222222/" style="font-size: 16px;">222222</a> <a href="/tags/happy/" style="font-size: 16px;">happy</a> <a href="/tags/清明/" style="font-size: 16px;">清明</a> <a href="/tags/题文不相关/" style="font-size: 16px;">题文不相关</a> <a href="/tags/文文不相关/" style="font-size: 16px;">文文不相关</a> <a href="/tags/记录/" style="font-size: 16px;">记录</a> <a href="/tags/first/" style="font-size: 16px;">first</a> <a href="/tags/没干货/" style="font-size: 16px;">没干货</a>
+                <a href="/tags/first/" style="font-size: 16px;">first</a> <a href="/tags/晚安/" style="font-size: 16px;">晚安</a> <a href="/tags/happy/" style="font-size: 16px;">happy</a> <a href="/tags/new-year/" style="font-size: 16px;">new_year</a> <a href="/tags/blog/" style="font-size: 28px;">blog</a> <a href="/tags/记录/" style="font-size: 16px;">记录</a> <a href="/tags/胖胖胖/" style="font-size: 16px;">胖胖胖</a> <a href="/tags/：）/" style="font-size: 16px;">：）</a> <a href="/tags/没干货/" style="font-size: 16px;">没干货</a> <a href="/tags/黑/" style="font-size: 16px;">黑</a> <a href="/tags/222222/" style="font-size: 16px;">222222</a> <a href="/tags/清明/" style="font-size: 16px;">清明</a> <a href="/tags/题文不相关/" style="font-size: 16px;">题文不相关</a> <a href="/tags/文文不相关/" style="font-size: 16px;">文文不相关</a>
             </div>
         </div>
     </div>
@@ -166,7 +166,7 @@
             
         </div>
         <div>
-            <p style="margin: 0 auto">All Rights Reserved.<span class="fasize"> <i class="fa fa-umbrella fasize"> </i></span> ponderwa</p>
+            <p style="margin: 0 auto">All Rights Reserved.<span class="fasize" id="self-test"> <i class="fa fa-umbrella fasize" onclick="ontest()"> </i></span> ponderwa</p>
             <p class="copyright">Copyright © 2017-2018</p>
         </div>
     </div>
@@ -188,6 +188,12 @@
 
 <!--访问统计及记录-->
 <script>
+    console.log('SelfTestModel='+ SelfTestModel);
+
+    if(SelfTestModel == 1){
+        console.log('I am SelfTestModel');
+    }
+
     //获取时间&时间戳&当前页面Address
     var VisitDate = new Date();
     var timestamp = VisitDate.getTime();        //当前时间点时间戳
@@ -235,6 +241,11 @@
     },function (error) {
 //        console.log("there's no such thing.")
     });
+</script>
+
+
+<script>
+
 </script>
 
 </body>

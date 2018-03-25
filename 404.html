@@ -8,7 +8,7 @@
 
 
 
-    <link rel="shortcut icon" href="/images/favicon1.png">
+    <link rel="shortcut icon" href="/images/3.png">
 
 
 
@@ -180,7 +180,7 @@
             
         </div>
         <div>
-            <p style="margin: 0 auto">All Rights Reserved.<span class="fasize"> <i class="fa fa-umbrella fasize"> </i></span> ponderwa</p>
+            <p style="margin: 0 auto">All Rights Reserved.<span class="fasize" id="self-test"> <i class="fa fa-umbrella fasize" onclick="ontest()"> </i></span> ponderwa</p>
             <p class="copyright">Copyright © 2017-2018</p>
         </div>
     </div>
@@ -202,6 +202,12 @@
 
 <!--访问统计及记录-->
 <script>
+    console.log('SelfTestModel='+ SelfTestModel);
+
+    if(SelfTestModel == 1){
+        console.log('I am SelfTestModel');
+    }
+
     //获取时间&时间戳&当前页面Address
     var VisitDate = new Date();
     var timestamp = VisitDate.getTime();        //当前时间点时间戳
@@ -249,6 +255,11 @@
     },function (error) {
 //        console.log("there's no such thing.")
     });
+</script>
+
+
+<script>
+
 </script>
 
 </body>

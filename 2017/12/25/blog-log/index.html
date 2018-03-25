@@ -8,7 +8,7 @@
 
 
 
-    <link rel="shortcut icon" href="/images/favicon1.png">
+    <link rel="shortcut icon" href="/images/3.png">
 
 
 
@@ -155,12 +155,16 @@
 <p>—–  调整归档页－分标签页－顶部的布局padding</p>
 <p>—–  增加和更新了Instagram、twitter、500px等几个并不怎么玩的social_link凑格子（知乎待）</p>
 <a id="more"></a>
+<p>​    2018.03.25  —–   V-1.0.2</p>
+<p>—–  “关于”页增加附录A-签名记—以后看看有没更合适的地方-Maybe单独页</p>
+<p>—–  调整Logo字体</p>
+
             </div>
 
             <div class="post-meta-bottom">
                 <div class="section-tag post-tag-span">
                     <span class="calendar">
-                        <span class="post-time">Last update: 2018-01-01</span>
+                        <span class="post-time">Last update: 2018-03-25</span>
                     </span>
                 </div>
             </div>
@@ -254,7 +258,7 @@
             
         </div>
         <div>
-            <p style="margin: 0 auto">All Rights Reserved.<span class="fasize"> <i class="fa fa-umbrella fasize"> </i></span> ponderwa</p>
+            <p style="margin: 0 auto">All Rights Reserved.<span class="fasize" id="self-test"> <i class="fa fa-umbrella fasize" onclick="ontest()"> </i></span> ponderwa</p>
             <p class="copyright">Copyright © 2017-2018</p>
         </div>
     </div>
@@ -276,6 +280,12 @@
 
 <!--访问统计及记录-->
 <script>
+    console.log('SelfTestModel='+ SelfTestModel);
+
+    if(SelfTestModel == 1){
+        console.log('I am SelfTestModel');
+    }
+
     //获取时间&时间戳&当前页面Address
     var VisitDate = new Date();
     var timestamp = VisitDate.getTime();        //当前时间点时间戳
@@ -323,6 +333,11 @@
     },function (error) {
 //        console.log("there's no such thing.")
     });
+</script>
+
+
+<script>
+
 </script>
 
 </body>

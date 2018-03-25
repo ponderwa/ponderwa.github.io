@@ -27,8 +27,11 @@
   font-size: 18px;
 }
 .tagclouda {
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
   color: #515151;
-  padding: 5px 5px;
+  padding: 0px 5px;
+  padding-top: 10px;
   text-align: center;
   font-weight: bold;
 }
