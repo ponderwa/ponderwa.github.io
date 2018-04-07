@@ -132,6 +132,7 @@
   line-height: 50px;
   font-weight: 600;
   font-size: 16px;
+  font-family: "SimSun";
 }
 .menu-item-link:hover {
   color: #f75357;
@@ -504,7 +505,7 @@ body {
   background-color: #fff;
   color: #333;
   line-height: 1.5;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, "Calibri", "Microsoft YaHei UI";
   padding-top: 0px;
 }
 @media (max-width: 480px) {
