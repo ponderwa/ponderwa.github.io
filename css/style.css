@@ -301,6 +301,17 @@ img {
 .logo-img {
   width: 130px;
   border-radius: 85px;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.logo-img:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
 }
 .signature {
   font-family: "Microsoft Himalaya";
@@ -392,9 +403,6 @@ img {
   line-height: 2;
   font-family: Athelas, STHeiti, Microsoft Yahei, serif false;
 }
-.for_padding {
-  padding: 0 30px;
-}
 .headline {
   color: #aaa;
   font-size: 1.2em;
@@ -403,7 +411,7 @@ img {
   margin-top: 30px;
 }
 .archive-list {
-  width: 340px;
+  width: 400px;
   margin: 0 auto;
   text-align: left;
 }
@@ -435,7 +443,7 @@ img {
 }
 .archive-item {
   border-left: 1px solid #222;
-  margin: 0 30px;
+  margin-left: 25px;
 }
 .archive-item:hover {
   border-left: 3px solid #8a8a8a;
