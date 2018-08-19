@@ -11,9 +11,14 @@
   margin-top: 30px;
 }
 .archive-list {
-  width: 400px;
+  width: 350px;
   margin: 0 auto;
   text-align: left;
+}
+@media (min-width: 480px) {
+  .archive-list {
+    width: 500px;
+  }
 }
 .archive-tagwall {
   text-align: right;
@@ -34,6 +39,12 @@
 .article-date {
   color: #777;
   margin-left: 35px;
+}
+@media (max-width: 480px) {
+  .article-date {
+    margin-left: 15px;
+    font-size: 0.9em;
+  }
 }
 .year-style {
   margin-left: 30px;
@@ -58,4 +69,10 @@
 }
 .article-link {
   margin-left: 10px;
+}
+@media (max-width: 480px) {
+  .article-link {
+    margin-left: 5px;
+    font-size: 0.9em;
+  }
 }
