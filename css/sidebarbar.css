@@ -53,17 +53,19 @@
 }
 .sidebarupdate {
   padding-top: 15px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #f1f1f1;
 }
 .widget-title {
   margin-top: 0;
+  margin-bottom: 15px;
 }
 .updateul {
   padding-left: 0;
   margin: 0 auto;
 }
 .updateli {
-  text-align: left;
+  margin: 0 auto;
   font-size: 0.95em;
 }
 .article-update {
@@ -92,9 +94,23 @@
 .update-warpper {
   padding: 0 20px;
 }
+@media (max-width: 768px) {
+  .update-warpper {
+    padding: 0;
+  }
+}
 .player {
   border-radius: 5px;
   padding-top: 20px;
   margain: 0;
   color: #333;
+}
+.article-link-update {
+  margin-left: 5px;
+}
+@media (max-width: 768px) {
+  .article-link-update {
+    margin-left: 0px;
+    font-size: 0.9em;
+  }
 }
