@@ -213,21 +213,13 @@
 <!--搜狐ip访问接口-->
 <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
 <script>
-//    console.log(returnCitySN["cip"]+','+returnCitySN["cname"]);
+    //console.log(returnCitySN["cip"]+','+returnCitySN["cname"]);
 </script>
 
-
-<!--备用IP访问接口-->
 
 
 <!--访问统计及记录-->
 <script>
-    console.log('SelfTestModel='+ SelfTestModel);
-
-    if(SelfTestModel == 1){
-        console.log('I am SelfTestModel');
-    }
-
     //获取时间&时间戳&当前页面Address
     var VisitDate = new Date();
     var timestamp = VisitDate.getTime();        //当前时间点时间戳
@@ -252,13 +244,13 @@
 
     queryHit.equalTo('UrL',VisitUrl);              //返回值是AV.Query的Array 始终为非空-->真
     queryHit.find().then(function (results){
-//        console.log(results.length);            //results.length符合要求对象个数
-        if(results.length > 0){                 //  >0和=1;  此链接hit记录已存在，更新hit数保存结束
+//        console.log(results.length);             //results.length符合要求对象个数
+        if(results.length > 0){                   //  >0和=1;  此链接hit记录已存在，更新hit数保存结束
 //            console.log(results[0]);
             var HitNumber = results[0];
 
             HitNumber.increment("HitNumber");
-//            HitNumber.fetchWhenSave(true);      //get recent result   fetchWhenSave和save    使用了 fetchWhenSave 选项，save 成功之后即可得到最新的值
+//            HitNumber.fetchWhenSave(true);      //get recent result fetchWhenSave和save使用了 fetchWhenSave 选项，save 成功之后即可得到最新的值
             HitNumber.save();
 
 //            console.log("更新hit数成功");
@@ -269,7 +261,6 @@
                 UrL: VisitUrl,
                 HitNumber: 1
             });
-
 //            console.log("增加新条目成功");
         }
     },function (error) {
@@ -277,10 +268,6 @@
     });
 </script>
 
-
-<script>
-
-</script>
 
 </body>
 
