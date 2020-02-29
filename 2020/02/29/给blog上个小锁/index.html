@@ -115,81 +115,136 @@
 
     <div class="content">
         <div class="container">
-    <main class="main">
+    <div class="main">
+        <div class="article-body">
+            <div class="article-title">
+               <h1>给blog上个小锁</h1>
+            </div>
 
-        <div class="archive archive-list">
-            
-
-
-            
-            
-                
-                <div class="archive-list all-post">
-                    <div class="for_padding">
-                        <span class="headline">All </span><span> 29 posts in total.</span>
-                    </div>
-                    <div class="archive-tagwall">
-                        <a href="/tags/"><span class="nameb" >标签墙</span></a>
-                    </div>
+            <div class="post-meta-top">
+                <div class="post-date section-tag post-tag-span">
+                    <span class="calendar">
+                        <i class="fa fa-calendar-check-o"></i>
+                        <span class="post-time">2020-02-29</span>
+                    </span>
                 </div>
-                
-            
-                     <!--循环始于此处  最后一个的边界-->
-                
 
-                      <!--结尾处理-->
-                    
 
-                
-                <!--<section class="archive-section">-->
-                    <div class="archive-list">
-                        <p class="year-style">2018</p>
-                    </div>
+                <div class="post-tag">
+                     <span class="section-tag">
+                         
+                         <a class="post-tag-span" href="/tags/blog/">
+                             <i class="fa fa-hashtag"></i>
+                             blog
+                         </a>
+                         
+                         <a class="post-tag-span" href="/tags/https/">
+                             <i class="fa fa-hashtag"></i>
+                             https
+                         </a>
+                         
+                         <a class="post-tag-span" href="/tags/github/">
+                             <i class="fa fa-hashtag"></i>
+                             github
+                         </a>
+                         
+                     </span>
+                </div>
+            </div>
 
-                    <ul class="archive-list">
-                
-                         <li class="archive-item">
-                            <span class="article-date">
-                              08/26
-                            </span>
-                            <a class="article-link" href="/2018/08/26/Technical notes of my blog/">
-                                Technical notes of my blog
-                            </a>
-                        </li>
-            
+            <div class="post-content">
+                <p>　　这不是一篇技术文章，主要是记录一下给blog增加SSL认证的过程以防黄鱼脑子日后又想不起了。其实是很有乐趣的。啥啥都很有乐趣，当你能沉浸其中的时候。<br>　　另外，今天巧是02月29日。下一个日历上的今天要4年以后啦，以今年的开年形势来看，一万年真的久，还是争一下朝夕，毕竟已经年纪这么大了。= =！<br>　　好，这就开始。</p>
+<p align="center"><img src="https://ap.ponderwa.tk/gallery/posts/https.png" width="90%"></p>
+
+<p>　　Wikipedia第一段是这么说的。</p>
+<a id="more"></a>
+<p>　　通俗说就是浏览器地址栏前的小锁，这里面点开，就有该网站的证书信息。目的是给http协议加密，验证身份并且保证信息安全。至于TLS或者SSL，请参考下图理解。其实只有比如交易类（金融、购物这种）或者大型网站才有强制https需求，我这样都没加搜索引擎域的小破站，纯粹用来是装饰/B的，哈哈哈！</p>
+<p align="center"><img src="https://ap.ponderwa.tk/gallery/posts/tls-ssl.png" width="90%"></p>
+
+
+<p>　　关于加密，其实我觉得还值得深入了解下，有公钥私钥、对称/非对称等概念。可是我也非深度用户，等哪天用到再说吧，留个念想。证书的基础设施架构，大致如下图：　</p>
+<p align="center"><img src="https://ap.ponderwa.tk/gallery/posts/key infrastructure.png" width="90%"></p>
+
+<p>　　接下来说实际操作。</p>
+<ul>
+<li><h4 id="常规做法"><a href="#常规做法" class="headerlink" title="常规做法:"></a>常规做法:</h4><ol>
+<li><p>1.申请证书</p>
+<p>　　当然先要加个前提——不要钱的。比较常用的有Let’s encrypt!、Cloudflare 和 阿里云。有效期分3个月和1年，证书级别也是最低级的DV（Domain Validated）。这对于本站这样非组织，非交易类的blog已经是足够了。</p>
+</li>
+<li><p>2.证书与域名绑定解析及认证</p>
+<p>　　各家的都有使用帮助，且网上教程也算充足，不再赘述。</p>
+</li>
+<li><p>3.将证书上传至Web服务器</p>
+<p>　　只使用过nginx，只要将证书上传到对应服务器，在conf文件中设置路径即可。</p>
+</li>
+</ol>
+</li>
+<li><h4 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages:"></a>Github Pages:</h4></li>
+</ul>
+<p>　　这是一个tricky的故事。</p>
+<p>　　由于事先不知道github的机制，先在阿里申请了证书，在解析并验证了域名之后，一会证书便签发了下来。然后便陷入了半天的思索。github pages只是一个web托管，不知道将证书上传到哪，又如何将证书和github pages关联上。折腾半天，才借鉴前人经验和帮助文档更改了DNS解析，添加了两条CNAME记录（等效4条A记录），并在setting中设置https强制跳转，这样即使访问http链接也会强制跳转到https链接。其实如此简单，但是摸索的过程还是显得蛋疼了些。= =!</p>
+<p align="center"><img src="https://ap.ponderwa.tk/gallery/posts/dig-CMD.png" width="90%"></p>
+
+<p align="center" font-size="10px">&lt;我是强迫症间隔符&gt;</p>
+
+<p align="center"><img src="https://ap.ponderwa.tk/gallery/posts/enforce HTTPS.png" width="90%"></p>
+
+<p>　　其实阿里云Symantec的证书是一年的有效期，这样相对于3个月有效期的Let’s encrypt!（github pages强制默认）每年理论上就可以少折腾3次了，况且目前也还不知道可行性和具体的操作要求，还是颇蛋疼。</p>
+<p align="center"><img src="https://ap.ponderwa.tk/gallery/posts/CA-info.png" width="350px"></p>
+
+<p>　　由于某些神秘原因，github在墙内的访问速度越来越慢，甚至出现某些页面被屏蔽的情况，加上蛋疼的3个月有效期证书，已然在考虑将blog迁移到VPS上。可是凡事有好也有坏，哪天ip被block就尴尬了，再说VPS的安全可靠性也是一个问号。</p>
+<p>　　一个深深爱着github的五金工程师。</p>
+<p>　　以上。</p>
+
+            </div>
+
+            <div class="post-meta-bottom">
+                <div class="section-tag post-tag-span">
+                    <span class="calendar">
+                        <span class="post-time">Last update: 2020-02-29</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-update">
+
+            </div>
+
+
         </div>
+
         <!--文章页面情况-->
+
+    <div class="post-pagin">
+        
+        
+        <div class="next-article">
+            <a class="article-link" href="/2020/01/26/在，入世和出世之间/">
+                <span class="prv_next_title">在，入世和出世之间</span>
+                <span class="hint">
+                        <i class="fa fa-chevron-right"></i>
+                      </span>
+            </a>
+        </div>
+        
+    </div>
+
+
+
+        <div class="clearfix"></div>
+    </div>
+
+
+
 
     
 
-    </main>
+    
 
+    <div class="clearfix"></div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Table of Contents -->
 
 
 
