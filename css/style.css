@@ -369,6 +369,7 @@ img {
   font-size: 18px;
 }
 .tagcloud-warpper {
+  margin-top: 10px;
   padding: 0 20px;
 }
 @media (max-width: 768px) {
@@ -728,6 +729,7 @@ li {
 .toc-child {
   margin-left: 1em;
 }
-.article-list {
-  margin: 0;
+.img-border {
+  border: 1px solid #a1a1a1;
+  border-radius: 10px;
 }
