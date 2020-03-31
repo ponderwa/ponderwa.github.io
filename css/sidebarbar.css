@@ -28,14 +28,13 @@
   -ms-transform: rotate(360deg);
 }
 .signature {
-  font-family: "Microsoft Himalaya";
-  font-size: 18px;
+  font-size: 20px;
   color: #888;
   border-bottom: 1px solid #f1f1f1;
 }
 .signature-header {
-  font-family: "Microsoft Himalaya";
-  font-size: 18px;
+  font-size: 20px;
+  color: #888;
 }
 .tagcloudname {
   border: 1px solid #a1a1a1;
