@@ -1,0 +1,29 @@
+.tag-cloud {
+  margin: 2em 0 3em;
+  text-align: center;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif false;
+}
+.tag-cloud .tag-cloud-title {
+  display: inline-block;
+  font-size: 18px false;
+  color: #a9a9a9;
+  border-bottom: 2px solid $theme-color false;
+}
+.tag-cloud .tag-cloud-tags {
+  margin: 10px 0;
+}
+.tag-cloud .tag-cloud-tags a {
+  display: inline-block;
+  position: relative;
+  margin: 5px 10px;
+  word-wrap: break-word;
+  transition-duration: 0.2s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.tag-cloud .tag-cloud-tags a:active,
+.tag-cloud .tag-cloud-tags a:focus,
+.tag-cloud .tag-cloud-tags a:hover {
+  color: #888;
+  transform: scale(1.1);
+}

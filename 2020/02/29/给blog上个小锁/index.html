@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>ponderwa</title>
+
+
+
+    <link rel="shortcut icon" href="/images/logo.png">
+
+
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="stylesheet" href="/css/font-awesome.css">
+
+
+
+<!--js引用必须使用ejs语法，html标签无效-->
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="float-button" style="display : none" id="float-btn" >
+            <a href="#top" class="float-button"  ><i class="fa fa-chevron-circle-up"></i></a>
+        </div>
+
+    <!--标题-->
+        <div class="title clearfix">
+        <div class="blog-title">
+            <a href="/" class="logo">ponderwa</a>
+
+        </div>
+
+        <div class="nav-button">
+            <!--<button type="button" class="nav-mobile-button" id="mybutton" onclick="test()">-->
+                <!--<span class="sr-only"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <i class="fa fa-navicon" onclick="test()"></i>
+        </div>
+    </div>
+
+    <!--头像与签名-->
+        <div class="favicon-header" id="testt" >
+        <div class="favicon">
+            <a href="/about/"><img class="logo-img" src="/images/favicon.png" alt="fun"></a>
+            <!--<p>你是不是有点禁欲啊</p>-->
+        </div>
+        <div class="signature-header">
+            <p>在明明德，在亲民，在止于至善</p>
+        </div>
+    </div>
+
+    <!--导航条-->
+        <div class="nav-bar" id="testtt" >
+        <!--目录条-->
+        <div class="menu-bar">
+            <div class="">
+                <ul class="menu-item">
+
+                    
+                    <li class="menu-item-li">
+                        <a class="menu-item-link" href="/categories/essay/" >杂志</a>
+                    </li>
+                    
+                    <li class="menu-item-li">
+                        <a class="menu-item-link" href="/categories/reading/" >读书</a>
+                    </li>
+                    
+                    <li class="menu-item-li">
+                        <a class="menu-item-link" href="/categories/manual/" >搞事</a>
+                    </li>
+                    
+                    <li class="menu-item-li">
+                        <a class="menu-item-link" href="/about/" >关于我</a>
+                    </li>
+                    
+                    <li class="menu-item-li">
+                        <a class="menu-item-link" href="/archives/" >归档</a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+        </div>
+        <!--图标条-->
+        <div class="icon-bar-header">
+
+            
+            <a class="icon-link" href="https://500px.me/ponderwa">
+                <i class="fa fa-500px"></i>
+            </a>
+            
+            <a class="icon-link" href="https://www.instagram.com/ponderwa/">
+                <i class="fa fa-instagram"></i>
+            </a>
+            
+            <a class="icon-link" href="https://twitter.com/ponderwa">
+                <i class="fa fa-twitter"></i>
+            </a>
+            
+
+        </div>
+    </div>
+    </div>
+</header>
+
+
+
+    <div class="content">
+        <div class="container">
+    <div class="main">
+        <div class="article-body">
+            <div class="article-title">
+               <h1>给blog上个小锁</h1>
+            </div>
+
+            <div class="post-meta-top">
+                <div class="post-date section-tag post-tag-span">
+                    <span class="calendar">
+                        <i class="fa fa-calendar-check-o"></i>
+                        <span class="post-time">2020-02-29</span>
+                    </span>
+                </div>
+
+
+                <div class="post-tag">
+                     <span class="section-tag">
+                         
+                         <a class="post-tag-span" href="/tags/blog/">
+                             <i class="fa fa-hashtag"></i>
+                             blog
+                         </a>
+                         
+                         <a class="post-tag-span" href="/tags/github/">
+                             <i class="fa fa-hashtag"></i>
+                             github
+                         </a>
+                         
+                         <a class="post-tag-span" href="/tags/https/">
+                             <i class="fa fa-hashtag"></i>
+                             https
+                         </a>
+                         
+                         <a class="post-tag-span" href="/tags/SSL/">
+                             <i class="fa fa-hashtag"></i>
+                             SSL
+                         </a>
+                         
+                     </span>
+                </div>
+            </div>
+
+            <div class="post-content">
+                <p>　　这不是一篇技术文章，主要是记录一下给blog增加SSL认证的过程以防黄鱼脑子日后又想不起了。其实是很有乐趣的。啥啥都很有乐趣，当你能沉浸其中的时候。<br>　　另外，今天巧是02月29日。下一个日历上的今天要4年以后啦，以今年的开年形势来看，一万年真的久，还是争一下朝夕，毕竟已经年纪这么大了。&#x3D; &#x3D;！<br>　　好，这就开始。</p>
+<p align="center"><img class="img-border" src="https://ap.ponderwa.tk/gallery/posts/https.png" width="90%"></p>
+
+<p>　　Wikipedia第一段是这么说的。</p>
+<span id="more"></span>
+
+<p>　　通俗说就是浏览器地址栏前的小锁，这里面点开，就有该网站的证书信息。目的是给http协议加密，验证身份并且保证信息安全。至于TLS或者SSL，请参考下图理解。其实只有比如交易类（金融、购物这种）或者大型网站才有强制https需求，我这样都没加搜索引擎域的小破站，纯粹用来是装饰&#x2F;B的，哈哈哈！</p>
+<p align="center"><img src="https://ap.ponderwa.tk/gallery/posts/tls-ssl.png" width="90%"></p>
+
+
+<p>　　关于加密，其实我觉得还值得深入了解下，有公钥私钥、对称&#x2F;非对称等概念。可是我也非深度用户，等哪天用到再说吧，留个念想。证书的基础设施架构，大致如下图：　</p>
+<p align="center"><img src="https://ap.ponderwa.tk/gallery/posts/key infrastructure.png" width="90%"></p>
+
+<p>　　接下来说实际操作。</p>
+<h4 id="常规做法"><a href="#常规做法" class="headerlink" title="常规做法:"></a>常规做法:</h4><p><em>1.申请证书</em></p>
+<p>　　当然先要加个前提——不要钱的。比较常用的有Let’s encrypt!、Cloudflare 和 阿里云。有效期分3个月和1年，证书级别也是最低级的DV（Domain Validated）。这对于本站这样非组织，非交易类的blog已经是足够了。</p>
+<p><em>2.证书与域名绑定解析及认证</em></p>
+<p>　　各家的都有使用帮助，且网上教程也算充足，不再赘述。</p>
+<p><em>3.将证书上传至Web服务器</em></p>
+<p>　　只使用过nginx，只要将证书上传到对应服务器，在conf文件中设置路径即可。</p>
+<h4 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages:"></a>Github Pages:</h4><p>　　这是一个tricky的故事。</p>
+<p>　　由于事先不知道github的机制，先在阿里申请了证书，在解析并验证了域名之后，一会证书便签发了下来。然后便陷入了半天的思索。github pages只是一个web托管，不知道将证书上传到哪，又如何将证书和github pages关联上。折腾半天，才借鉴前人经验和帮助文档更改了DNS解析，添加了两条CNAME记录（等效4条A记录），并在setting中设置https强制跳转，这样即使访问http链接也会强制跳转到https链接。其实如此简单，但是摸索的过程还是显得蛋疼了些。&#x3D; &#x3D;!</p>
+<p align="center"><img src="https://ap.ponderwa.tk/gallery/posts/dig-CMD.png" width="90%"></p>
+
+<p align="center"><我是强迫症分隔符></p>
+
+<p align="center"><img class="img-border" src="https://ap.ponderwa.tk/gallery/posts/enforce HTTPS.png" width="90%"></p>
+
+<p>　　其实阿里云Symantec的证书是一年的有效期，这样相对于3个月有效期的Let’s encrypt!（github pages强制默认）每年理论上就可以少折腾3次了，况且目前也还不知道可行性和具体的操作要求，还是颇蛋疼。</p>
+<p align="center"><img class="img-border" src="https://ap.ponderwa.tk/gallery/posts/CA-info.png" width="324px"></p>
+
+<p>　　由于某些神秘原因，github在墙内的访问速度越来越慢，甚至出现某些页面被屏蔽的情况，加上蛋疼的3个月有效期证书，已然在考虑将blog迁移到VPS上。可是凡事有好也有坏，哪天ip被block就尴尬了，再说VPS的安全可靠性也是一个问号。</p>
+<p>　　一个深深爱着github的电农，以上。</p>
+<p>###<strong>Update</strong></p>
+<p>　　由于SSL上级证书链不完整导致在某些手机浏览器上（其实就是我破菊花厂P10的内置浏览器）拒绝加载自建图床链接内容，提示内容为”证书并非来自可信的授权中心”。</p>
+<p align="center"><img  class="img-border" src="https://ap.ponderwa.tk/gallery/posts/blocked.jpg" width="90%"></p>
+
+<p>　　通过<strong>myssl.com</strong>解析域名与证书，并且下载完整证书链替换后bug fixed。完整的证书链有两段**—–BEGIN CERTIFICATE—–** &amp; **—–END CERTIFICATE—–**，下图为被block内容站点SSL评级。</p>
+<p align="center"><img  class="img-border" src="https://ap.ponderwa.tk/gallery/posts/myssl.png" width="90%"></p>
+
+
+
+
+
+
+            </div>
+
+            <div class="post-meta-bottom">
+                <div class="section-tag post-tag-span">
+                    <span class="calendar">
+                        <span class="post-time">Last update: 2020-03-05</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-update">
+
+            </div>
+
+
+        </div>
+
+        <!--文章页面情况-->
+
+    <div class="post-pagin">
+        
+        <div class="prev-article">
+            <a class="article-link" href="/2020/05/26/%E7%90%B5%E7%90%B6%E5%85%A5%E9%97%A8%E7%AE%80%E6%9E%90/">
+                  <span class="hint">
+                      <i class="fa fa-chevron-left"></i>
+                  </span>
+                <span class="prv_next_title">琵琶学习浅析</span>
+            </a>
+        </div>
+        
+        
+        <div class="next-article">
+            <a class="article-link" href="/2020/01/26/%E5%9C%A8%EF%BC%8C%E5%85%A5%E4%B8%96%E5%92%8C%E5%87%BA%E4%B8%96%E4%B9%8B%E9%97%B4/">
+                <span class="prv_next_title">在，入世和出世之间</span>
+                <span class="hint">
+                        <i class="fa fa-chevron-right"></i>
+                      </span>
+            </a>
+        </div>
+        
+    </div>
+
+
+
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <div class="clearfix"></div>
+</div>
+
+<!-- Table of Contents -->
+
+
+
+    </div>
+
+
+
+
+
+    <!--不蒜子统计-->
+    <!--<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>-->
+
+
+    <!--LeanCloud-->
+    <script src="https://cdn1.lncld.net/static/js/3.5.0/av-min.js"></script>
+    <!--<script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>-->
+    <!--<script src="https://leancloud.cn/scripts/lib/av-0.4.6.min.js"></script>-->
+    <script>AV.initialize("PwSNu3WwxmGqdm0Ci7ESkAGs-gzGzoHsz", "dC8MOHawKzJot1o1w8oNWqsJ");</script>
+
+
+   <!--Js from own-->
+    
+<script src="/js/myscript.js"></script>
+
+
+    <div class="container">
+    <div class="footer">
+        <div class="icon-bar-footer">
+            
+            <a class="icon-link-footer" href="https://500px.me/ponderwa">
+                <i class="fa fa-500px"></i>
+            </a>
+            
+            <a class="icon-link-footer" href="https://www.instagram.com/ponderwa/">
+                <i class="fa fa-instagram"></i>
+            </a>
+            
+            <a class="icon-link-footer" href="https://twitter.com/ponderwa">
+                <i class="fa fa-twitter"></i>
+            </a>
+            
+        </div>
+        <div>
+            <p style="margin: 0 auto">All Rights Reserved.<span class="fasize" id="self-test"> <i class="fa fa-umbrella fasize" onclick="ontest()"> </i></span> ponderwa</p>
+            <p class="copyright">Copyright © 2017-2024</p>
+        </div>
+    </div>
+</div>
+
+
+<!--cog 齿轮-->
+
+
+<!--搜狐ip访问接口-->
+<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script>
+    //console.log(returnCitySN["cip"]+','+returnCitySN["cname"]);
+</script>
+
+
+
+<!--访问统计及记录-->
+<script>
+    //获取时间&时间戳&当前页面Address
+    var VisitDate = new Date();
+    var timestamp = VisitDate.getTime();        //当前时间点时间戳
+    var VisitUrl = window.location.href;        //获取当前页面的url
+//    console.log(VisitDate);
+//    console.log(timestamp);
+//    console.log(VisitUrl);
+
+    //存IP和时间戳
+    var VisitRecord = AV.Object.extend('Visit_Record');
+    var visit_record = new VisitRecord();
+    visit_record.save({
+        UrL: VisitUrl,
+        IP: returnCitySN["cip"],
+        Location: returnCitySN["cname"]
+    }).then(function(object) {
+//        alert('LeanCloud Rocks!aaa');
+    })
+
+    //查询当前URL
+    var queryHit = new AV.Query('Hit_Counter');    //创建查询Hit_Counter
+
+    queryHit.equalTo('UrL',VisitUrl);              //返回值是AV.Query的Array 始终为非空-->真
+    queryHit.find().then(function (results){
+//        console.log(results.length);             //results.length符合要求对象个数
+        if(results.length > 0){                   //  >0和=1;  此链接hit记录已存在，更新hit数保存结束
+//            console.log(results[0]);
+            var HitNumber = results[0];
+
+            HitNumber.increment("HitNumber");
+//            HitNumber.fetchWhenSave(true);      //get recent result fetchWhenSave和save使用了 fetchWhenSave 选项，save 成功之后即可得到最新的值
+            HitNumber.save();
+
+//            console.log("更新hit数成功");
+        }else{
+            var VisitRecord = AV.Object.extend('Hit_Counter');
+            var visit_record = new VisitRecord();
+            visit_record.save({
+                UrL: VisitUrl,
+                HitNumber: 1
+            });
+//            console.log("增加新条目成功");
+        }
+    },function (error) {
+//        console.log("there's no such thing.")
+    });
+</script>
+
+
+</body>
+
+</html>

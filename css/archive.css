@@ -1,0 +1,88 @@
+.archive {
+  text-align: left;
+  line-height: 2;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif false;
+}
+.headline {
+  color: #aaa;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 30px;
+}
+.archive-list {
+  width: 340px;
+  margin: 0 auto;
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .archive-list {
+    width: 500px;
+  }
+}
+.archive-tagwall {
+  text-align: right;
+}
+.nameb {
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+  color: #515151;
+  padding: 5px 5px;
+  padding-top: 7px;
+  text-align: center;
+  font-weight: bold;
+}
+.tag-list {
+  width: 340px;
+  margin: 0 auto;
+}
+.article-date {
+  color: #777;
+  margin-left: 35px;
+}
+@media (max-width: 480px) {
+  .article-date {
+    margin-left: 15px;
+    font-size: 0.9em;
+  }
+}
+.year-style {
+  margin-left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 20px;
+}
+@media (max-width: 480px) {
+  .year-style {
+    margin-left: 20px;
+  }
+}
+.archive-item {
+  border-left: 1px solid #222;
+  margin-left: 25px;
+}
+.archive-item:hover {
+  border-left: 3px solid #8a8a8a;
+  transition: 1.3s ease-out;
+  transform: translateX(15px);
+}
+.archive-item:hover .archive-post-time {
+  color: #7c7c7c;
+}
+.archive-item:hover .archive-post-title .archive-post-link {
+  color: #7c7c7c;
+}
+@media (max-width: 480px) {
+  .archive-item {
+    margin-left: 15px;
+  }
+}
+.article-link {
+  margin-left: 10px;
+}
+@media (max-width: 480px) {
+  .article-link {
+    margin-left: 5px;
+    font-size: 0.9em;
+  }
+}

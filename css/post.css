@@ -1,0 +1,36 @@
+img {
+  text-align: center;
+}
+.article-title,
+.copyright {
+  text-align: center;
+}
+.article-body {
+  text-align: left;
+}
+.post-date {
+  text-align: center;
+}
+.post-content {
+  text-align: left;
+}
+.post-meta-top {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.post-meta-bottom {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  border-top: 1px solid #f1f1f1;
+  padding-top: 20px;
+}
+.post-tag {
+  line-height: 1.5;
+  text-align: center;
+  color: #222;
+}
+.post-tag-span {
+  color: #888;
+}

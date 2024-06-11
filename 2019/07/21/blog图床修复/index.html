@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>ponderwa</title>
+
+
+
+    <link rel="shortcut icon" href="/images/logo.png">
+
+
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="stylesheet" href="/css/font-awesome.css">
+
+
+
+<!--js引用必须使用ejs语法，html标签无效-->
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="float-button" style="display : none" id="float-btn" >
+            <a href="#top" class="float-button"  ><i class="fa fa-chevron-circle-up"></i></a>
+        </div>
+
+    <!--标题-->
+        <div class="title clearfix">
+        <div class="blog-title">
+            <a href="/" class="logo">ponderwa</a>
+
+        </div>
+
+        <div class="nav-button">
+            <!--<button type="button" class="nav-mobile-button" id="mybutton" onclick="test()">-->
+                <!--<span class="sr-only"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <i class="fa fa-navicon" onclick="test()"></i>
+        </div>
+    </div>
+
+    <!--头像与签名-->
+        <div class="favicon-header" id="testt" >
+        <div class="favicon">
+            <a href="/about/"><img class="logo-img" src="/images/favicon.png" alt="fun"></a>
+            <!--<p>你是不是有点禁欲啊</p>-->
+        </div>
+        <div class="signature-header">
+            <p>在明明德，在亲民，在止于至善</p>
+        </div>
+    </div>
+
+    <!--导航条-->
+        <div class="nav-bar" id="testtt" >
+        <!--目录条-->
+        <div class="menu-bar">
+            <div class="">
+                <ul class="menu-item">
+
+                    
+                    <li class="menu-item-li">
+                        <a class="menu-item-link" href="/categories/essay/" >杂志</a>
+                    </li>
+                    
+                    <li class="menu-item-li">
+                        <a class="menu-item-link" href="/categories/reading/" >读书</a>
+                    </li>
+                    
+                    <li class="menu-item-li">
+                        <a class="menu-item-link" href="/categories/manual/" >搞事</a>
+                    </li>
+                    
+                    <li class="menu-item-li">
+                        <a class="menu-item-link" href="/about/" >关于我</a>
+                    </li>
+                    
+                    <li class="menu-item-li">
+                        <a class="menu-item-link" href="/archives/" >归档</a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+        </div>
+        <!--图标条-->
+        <div class="icon-bar-header">
+
+            
+            <a class="icon-link" href="https://500px.me/ponderwa">
+                <i class="fa fa-500px"></i>
+            </a>
+            
+            <a class="icon-link" href="https://www.instagram.com/ponderwa/">
+                <i class="fa fa-instagram"></i>
+            </a>
+            
+            <a class="icon-link" href="https://twitter.com/ponderwa">
+                <i class="fa fa-twitter"></i>
+            </a>
+            
+
+        </div>
+    </div>
+    </div>
+</header>
+
+
+
+    <div class="content">
+        <div class="container">
+    <div class="main">
+        <div class="article-body">
+            <div class="article-title">
+               <h1>blog图床修复</h1>
+            </div>
+
+            <div class="post-meta-top">
+                <div class="post-date section-tag post-tag-span">
+                    <span class="calendar">
+                        <i class="fa fa-calendar-check-o"></i>
+                        <span class="post-time">2019-07-21</span>
+                    </span>
+                </div>
+
+
+                <div class="post-tag">
+                     <span class="section-tag">
+                         
+                         <a class="post-tag-span" href="/tags/blog/">
+                             <i class="fa fa-hashtag"></i>
+                             blog
+                         </a>
+                         
+                         <a class="post-tag-span" href="/tags/Markdown/">
+                             <i class="fa fa-hashtag"></i>
+                             Markdown
+                         </a>
+                         
+                         <a class="post-tag-span" href="/tags/%E5%9B%BE%E5%BA%8A/">
+                             <i class="fa fa-hashtag"></i>
+                             图床
+                         </a>
+                         
+                     </span>
+                </div>
+            </div>
+
+            <div class="post-content">
+                <p>　　这图床崩了好像快一个多月了，离上次折腾图床好像过去快2个多月了。前一段风声紧，吓得我连VPS也退订了，随着VPS一起崩的就是这图床了，当时还颇莫名，想着GFW即使2.0了也犯不着和我这小破blog过不去啊。再说我除了胡说八道，也不色情暴力反社会啊。</p>
+<p>　　一个漫长的周期过去了，不知道这算不算男人的period，终于静下心沉住气能开始踏踏实实干点脑子清楚的事了，这不还有这图床还瘫着嘛。干它！</p>
+<span id="more"></span>
+
+<p>　　七牛是最大街的了，上回用的也是它，用UI到使用体验上，还是品牌信任度还是挺好的。可是树大也招风，合规的问题上那肯定也是没有商量的了。只能绑定你已经公安备案的域名才能生成能用的外链，我这小破站一年充其量能来多少流量？再者说，即使我不说啥反x反xx的，也不能主动给自己套上紧箍咒啊，自由言论的权利形式上还是需要存续的。那就不瞎折腾了！</p>
+<p align="center"><img src="https://i.loli.net/2019/07/21/5d33f481464ae82032.png" width="100%" title="QiNiu-lock.png"></p>
+
+<p>　　辗转腾挪，还是发现了个宝藏图床，燃眉之急暂时还是解了。—<a href="https://sm.ms/%E3%80%82%E5%90%8D%E5%AD%97%E6%9C%89%E7%82%B9%E8%AE%A9%E4%BA%BA%E6%B5%AE%E6%83%B3%E8%81%94%E7%BF%A9%EF%BC%8C%E5%93%88%E5%93%88%E5%93%88%EF%BC%8C%E6%81%B6%E4%BF%97%E7%9C%9F%E6%98%AF%E4%B8%AA%E4%B8%80%E5%8F%91%E4%B8%8D%E5%8F%AF%E4%B8%8D%E4%BF%97%E7%9A%84%E4%BA%8B%E6%83%85%EF%BC%8C%E4%B9%9F%E5%8F%AF%E8%83%BD%E6%9C%AC%E4%BA%BA%E7%A1%AE%E5%AE%9E%E4%BD%8E%E7%BA%A7%EF%BC%8C%E8%BF%98%E5%81%9C%E7%95%99%E5%9C%A8%E5%9F%BA%E7%A1%80%E7%9A%84%E7%B9%81%E6%AE%96%E6%AC%B2%E4%B8%AD%E3%80%82%E5%9B%9E%E5%88%B0%E6%AD%A3%E9%A2%98%EF%BC%8C%E8%BF%99smms%E7%BB%99%E6%88%91%E5%8D%B0%E8%B1%A1%E8%BF%98%E6%98%AF%E4%B8%8D%E9%94%99%E7%9A%84%E3%80%82%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%A5%97%E8%AF%9D%E7%95%A5%E8%BF%87%EF%BC%8C%E5%8F%AA%E4%B8%80%E6%9D%A1%EF%BC%8C%E7%9B%B4%E6%8E%A5%E8%83%BD%E7%94%9F%E6%88%90markdown%E5%92%8CHTML%E8%AF%AD%E5%8F%A5%EF%BC%8C%E8%BF%99%E5%B0%B1%E5%BE%88%E5%90%B8%E5%BC%95%E6%88%91%E8%BF%99%E6%A0%B7%E9%9C%80%E8%A6%81%E7%BC%96%E8%BE%91%E7%BD%91%E9%A1%B5%E7%9A%84%E4%BA%BA%E4%BA%86%E3%80%82%E5%AF%84%E5%B8%8C%E6%9C%9B%E5%AE%83%E8%83%BD%E7%A8%B3%E5%AE%9A%E9%9D%A0%E8%B0%B1%E5%B1%B9%E7%AB%8B%E4%B8%8D%E5%80%92%E5%90%A7%EF%BC%8C%E7%8E%B0%E5%9C%A8%E5%9B%BE%E5%B0%91%E8%BF%98%E5%A5%BD%E8%AF%B4%EF%BC%8C%E7%AD%89%E5%9B%BE%E5%A4%9A%E4%BA%86%EF%BC%8C%E5%9B%BE%E5%BA%8A%E4%B8%80%E5%B4%A9%EF%BC%8C%E5%AF%BC%E8%87%B4%E7%9A%84%E6%8D%A2%E9%93%BE%E6%8E%A5%E9%82%A3%E5%B0%B1%E5%BE%88gan%E5%B0%AC%E4%BA%86%E3%80%82">https://sm.ms/。名字有点让人浮想联翩，哈哈哈，恶俗真是个一发不可不俗的事情，也可能本人确实低级，还停留在基础的繁殖欲中。回到正题，这smms给我印象还是不错的。基本的套话略过，只一条，直接能生成markdown和HTML语句，这就很吸引我这样需要编辑网页的人了。寄希望它能稳定靠谱屹立不倒吧，现在图少还好说，等图多了，图床一崩，导致的换链接那就很gan尬了。</a></p>
+<p>　　附上截图一张，就说到这里吧。</p>
+<p align="center"><img src="https://i.loli.net/2019/07/21/5d33f4817a58d27265.png" width="100%" title="smms-sample.png"></p>
+
+<p>　　Update：</p>
+<p>好像由于服务器在HK的关系，第一次download加载图片的速度有点感人，先凑合吧。&#x3D; &#x3D;！</p>
+
+            </div>
+
+            <div class="post-meta-bottom">
+                <div class="section-tag post-tag-span">
+                    <span class="calendar">
+                        <span class="post-time">Last update: 2019-07-21</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-update">
+
+            </div>
+
+
+        </div>
+
+        <!--文章页面情况-->
+
+    <div class="post-pagin">
+        
+        <div class="prev-article">
+            <a class="article-link" href="/2019/07/24/%E8%BF%91%E6%9C%9F%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83/">
+                  <span class="hint">
+                      <i class="fa fa-chevron-left"></i>
+                  </span>
+                <span class="prv_next_title">近期的一些个个人思考</span>
+            </a>
+        </div>
+        
+        
+        <div class="next-article">
+            <a class="article-link" href="/2019/05/01/%E9%9D%A2%E5%85%B7%E4%B8%8E%E8%8A%B1%E7%81%AB/">
+                <span class="prv_next_title">面具与花火</span>
+                <span class="hint">
+                        <i class="fa fa-chevron-right"></i>
+                      </span>
+            </a>
+        </div>
+        
+    </div>
+
+
+
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <div class="clearfix"></div>
+</div>
+
+<!-- Table of Contents -->
+
+
+
+    </div>
+
+
+
+
+
+    <!--不蒜子统计-->
+    <!--<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>-->
+
+
+    <!--LeanCloud-->
+    <script src="https://cdn1.lncld.net/static/js/3.5.0/av-min.js"></script>
+    <!--<script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>-->
+    <!--<script src="https://leancloud.cn/scripts/lib/av-0.4.6.min.js"></script>-->
+    <script>AV.initialize("PwSNu3WwxmGqdm0Ci7ESkAGs-gzGzoHsz", "dC8MOHawKzJot1o1w8oNWqsJ");</script>
+
+
+   <!--Js from own-->
+    
+<script src="/js/myscript.js"></script>
+
+
+    <div class="container">
+    <div class="footer">
+        <div class="icon-bar-footer">
+            
+            <a class="icon-link-footer" href="https://500px.me/ponderwa">
+                <i class="fa fa-500px"></i>
+            </a>
+            
+            <a class="icon-link-footer" href="https://www.instagram.com/ponderwa/">
+                <i class="fa fa-instagram"></i>
+            </a>
+            
+            <a class="icon-link-footer" href="https://twitter.com/ponderwa">
+                <i class="fa fa-twitter"></i>
+            </a>
+            
+        </div>
+        <div>
+            <p style="margin: 0 auto">All Rights Reserved.<span class="fasize" id="self-test"> <i class="fa fa-umbrella fasize" onclick="ontest()"> </i></span> ponderwa</p>
+            <p class="copyright">Copyright © 2017-2024</p>
+        </div>
+    </div>
+</div>
+
+
+<!--cog 齿轮-->
+
+
+<!--搜狐ip访问接口-->
+<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script>
+    //console.log(returnCitySN["cip"]+','+returnCitySN["cname"]);
+</script>
+
+
+
+<!--访问统计及记录-->
+<script>
+    //获取时间&时间戳&当前页面Address
+    var VisitDate = new Date();
+    var timestamp = VisitDate.getTime();        //当前时间点时间戳
+    var VisitUrl = window.location.href;        //获取当前页面的url
+//    console.log(VisitDate);
+//    console.log(timestamp);
+//    console.log(VisitUrl);
+
+    //存IP和时间戳
+    var VisitRecord = AV.Object.extend('Visit_Record');
+    var visit_record = new VisitRecord();
+    visit_record.save({
+        UrL: VisitUrl,
+        IP: returnCitySN["cip"],
+        Location: returnCitySN["cname"]
+    }).then(function(object) {
+//        alert('LeanCloud Rocks!aaa');
+    })
+
+    //查询当前URL
+    var queryHit = new AV.Query('Hit_Counter');    //创建查询Hit_Counter
+
+    queryHit.equalTo('UrL',VisitUrl);              //返回值是AV.Query的Array 始终为非空-->真
+    queryHit.find().then(function (results){
+//        console.log(results.length);             //results.length符合要求对象个数
+        if(results.length > 0){                   //  >0和=1;  此链接hit记录已存在，更新hit数保存结束
+//            console.log(results[0]);
+            var HitNumber = results[0];
+
+            HitNumber.increment("HitNumber");
+//            HitNumber.fetchWhenSave(true);      //get recent result fetchWhenSave和save使用了 fetchWhenSave 选项，save 成功之后即可得到最新的值
+            HitNumber.save();
+
+//            console.log("更新hit数成功");
+        }else{
+            var VisitRecord = AV.Object.extend('Hit_Counter');
+            var visit_record = new VisitRecord();
+            visit_record.save({
+                UrL: VisitUrl,
+                HitNumber: 1
+            });
+//            console.log("增加新条目成功");
+        }
+    },function (error) {
+//        console.log("there's no such thing.")
+    });
+</script>
+
+
+</body>
+
+</html>
